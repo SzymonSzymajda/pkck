@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="zad1.css" type="text/css" ?>
+
+<tablica_zadań>
+    <użytkownicy>
+        <użytkownik id="">
+            <imię>USER</imię>
+            <nazwisko/>
+
+        </użytkownik>
+    </użytkownicy>
+
+    <zadania>
+        <tablica status="otwarte">
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad1">
+                <tytuł>Otwarte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+        </tablica>
+
+        <tablica status="realizowane">
+            <zadanie id="zad2">
+                <tytuł>Realizowane</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+        </tablica>
+
+        <tablica status="zamknięte">
+            <zadanie id="zad3">
+                <tytuł>Zamknięte</tytuł>
+                <opis>.</opis>
+                <wykonawca>ja</wykonawca>
+                <data_rozpoczęcia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>
+                        <dzień>11</dzień>
+                        <miesiąc>03</miesiąc>
+                        <rok>2019</rok>
+                    </data>
+                </data_ukończenia>
+            </zadanie>
+        </tablica>
+
+    </zadania>
+
+    <stopka>
+        <ostatnia_modyfikacja autor="pawcio">
+            <data>
+                <dzień>11</dzień>
+                <miesiąc>03</miesiąc>
+                <rok>2019</rok>
+            </data>
+        </ostatnia_modyfikacja>
+        <autorzy>
+            <autor id="pawcio">
+                <imię>Paweł</imię>
+                <nazwisko>Galewicz</nazwisko>
+                <nr_indeksu>210182</nr_indeksu>
+            </autor>
+            <autor id="morda">
+                <imię>Szymon</imię>
+                <nazwisko>Szymajda</nazwisko>
+                <nr_indeksu>210339</nr_indeksu>
+            </autor>
+        </autorzy>
+    </stopka>
+</tablica_zadań>
+
+

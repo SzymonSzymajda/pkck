@@ -1,0 +1,92 @@
+użytkownicy
+{
+    display: none;
+}
+tablica_zadań>*
+{
+    font-size: 1vw;
+}
+
+zadania
+{
+    display: grid;
+    background-color: #6492e9;
+}
+
+tytuł
+{
+    display: block;
+}
+
+data
+{
+
+
+}
+
+zadanie
+{
+    background-color: white;
+    display: block;
+    margin: 10px 20px 10px 20px;
+    padding: 0.75em 1em;
+    width: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 10px;
+    border-color: grey;
+}
+
+tablica
+{
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 20px 20px 20px 20px;
+}
+
+tablica::before
+{
+    text-align: center;
+    letter-spacing: 0.2vw;
+    font-family: "Trebuchet MS", "Comic Sans MS";
+    border-bottom-color: black;
+    display: block;
+    font-size: 2vw;
+    content: attr(status);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    padding-bottom: 5px;
+}
+
+tablica[status="otwarte"]
+{
+    grid-column: 1;
+    /*margin: 2em 6em 2em 6em;*/
+}
+
+tablica[status="otwarte"] > zadanie
+{
+    border-left-color: #ff8761;
+}
+
+tablica[status="realizowane"]
+{
+    grid-column: 2;
+    /*margin: 2em 6em 2em 6em;*/
+}
+
+tablica[status="realizowane"] > zadanie
+{
+    border-left-color: #ffe662;
+}
+
+tablica[status="zamknięte"]
+{
+    grid-column: 3;
+    /*margin: 2em 6em 2em 6em;*/
+}
+
+tablica[status="zamknięte"] > zadanie
+{
+    border-left-color: #9dff3a;
+}
