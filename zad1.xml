@@ -2,36 +2,36 @@
 <?xml-stylesheet href="zad1.css" type="text/css" ?>
 
 <tablica_zadań>
-    <użytkownicy>
-        <użytkownik id="1">
+    <użytkownicy nazwa="Pracownicy">
+        <użytkownik id="001">
             <imię>Jan</imię>
             <nazwisko>Kowalski</nazwisko>
             <nr_tel>111-222-333</nr_tel>
-            <email>jan.kowalski@kompro.cwel</email>
+            <email>jan.kowalski@kompro.tzvl</email>
             <dział>LDZ01</dział>
         </użytkownik>
-        <użytkownik id="2">
+        <użytkownik id="002">
             <imię>Jan</imię>
             <nazwisko>Nowak</nazwisko>
             <nr_tel>222-333-444</nr_tel>
-            <email>jan.nowak@kompro.cwel</email>
+            <email>jan.nowak@kompro.tzvl</email>
             <dział>WWA01</dział>
         </użytkownik>
-        <użytkownik id="3">
+        <użytkownik id="003">
             <imię>Jan</imię>
             <nazwisko>Nowacki</nazwisko>
             <nr_tel>333-222-111</nr_tel>
-            <email>jan.nowacki@kompro.cwel</email>
+            <email>jan.nowacki@kompro.tzvl</email>
             <dział>WWA02</dział>
         </użytkownik>
-        <użytkownik id="4">
+        <użytkownik id="004">
             <imię>Jan</imię>
             <nazwisko>Kowal</nazwisko>
             <nr_tel>999-888-777</nr_tel>
-            <email>jan.kowal@kompro.cwel</email>
+            <email>jan.kowal@kompro.tzvl</email>
             <dział>LDZ01</dział>
         </użytkownik>
-        <użytkownik id="5">
+        <użytkownik id="005">
             <imię>Tomasz</imię>
             <nazwisko>Terka</nazwisko>
             <nr_tel>000-000-000</nr_tel>
@@ -46,7 +46,7 @@
             <zadanie id="zad1">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 1</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>001</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -56,9 +56,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -66,7 +66,7 @@
             <zadanie id="zad2">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 2</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>002</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -76,9 +76,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -86,7 +86,7 @@
             <zadanie id="zad3">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 3</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>003</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -96,9 +96,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -106,7 +106,7 @@
             <zadanie id="zad4">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 4</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>004</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -116,9 +116,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -126,7 +126,7 @@
             <zadanie id="zad5">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 5</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>005</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -136,9 +136,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -146,7 +146,7 @@
             <zadanie id="zad6">
                 <tytuł>Otwarte</tytuł>
                 <opis>Zadanie 6</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>001</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -156,9 +156,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -168,7 +168,7 @@
             <zadanie id="zad7">
                 <tytuł>Realizowane</tytuł>
                 <opis>Zadanie 7</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>002</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -178,9 +178,9 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
+                        <dzień></dzień>
+                        <miesiąc></miesiąc>
+                        <rok></rok>
                     </data>
                 </data_ukończenia>
             </zadanie>
@@ -190,7 +190,7 @@
             <zadanie id="zad8">
                 <tytuł>Zamknięte</tytuł>
                 <opis>Zadanie 8</opis>
-                <wykonawca>ja</wykonawca>
+                <wykonawca>003</wykonawca>
                 <data_rozpoczęcia>
                     <data>
                         <dzień>11</dzień>
@@ -200,7 +200,7 @@
                 </data_rozpoczęcia>
                 <data_ukończenia>
                     <data>
-                        <dzień>11</dzień>
+                        <dzień>16</dzień>
                         <miesiąc>03</miesiąc>
                         <rok>2019</rok>
                     </data>
