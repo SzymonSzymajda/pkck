@@ -1,0 +1,38 @@
+
+<!ELEMENT tablica_zadań (zadania|użytkownicy|stopka)*>
+<!ELEMENT zadania (tablica)*>
+<!ELEMENT tablica (zadanie)*>
+<!ATTLIST tablica
+        status CDATA #REQUIRED>
+<!ELEMENT zadanie (tytuł|opis|wykonawca|data_rozpoczęcia|data_ukończenia)*>
+<!ATTLIST zadanie
+        id CDATA #REQUIRED>
+<!ELEMENT tytuł (#PCDATA)>
+<!ELEMENT opis (#PCDATA)>
+<!ELEMENT wykonawca (#PCDATA)>
+<!ELEMENT data_rozpoczęcia (data)*>
+<!ELEMENT data (dzień|miesiąc|rok)*>
+<!ELEMENT data_ukończenia (data)*>
+<!ELEMENT użytkownicy (użytkownik)*>
+<!ATTLIST użytkownicy
+        nazwa CDATA #REQUIRED>
+<!ELEMENT użytkownik (imię|nazwisko|nr_tel|email|dział)*>
+<!ATTLIST użytkownik
+        id CDATA #REQUIRED>
+<!ELEMENT imię (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT nr_tel (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT dział (#PCDATA)>
+<!ELEMENT stopka (ostatnia_modyfikacja|autorzy)*>
+<!ELEMENT ostatnia_modyfikacja (data)*>
+<!ATTLIST ostatnia_modyfikacja
+        autor CDATA #REQUIRED>
+<!ELEMENT dzień (#PCDATA)>
+<!ELEMENT miesiąc (#PCDATA)>
+<!ELEMENT rok (#PCDATA)>
+<!ELEMENT autorzy (autor)*>
+<!ELEMENT autor (imię|nazwisko|nr_indeksu)*>
+<!ATTLIST autor
+        id CDATA #REQUIRED>
+<!ELEMENT nr_indeksu (#PCDATA)>
