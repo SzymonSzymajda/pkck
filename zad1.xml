@@ -2,6 +2,105 @@
 <?xml-stylesheet href="zad1.css" type="text/css" ?>
 
 <tablica_zadań>
+
+    <zadania>
+        <tablica status="otwarte">
+            <zadanie id="zad1">
+                <tytuł>LDZ01-4: Błąd uruchomienia</tytuł>
+                <opis>Naprawić błąd środowiska</opis>
+                <wykonawca>001</wykonawca>
+            </zadanie>
+
+            <zadanie id="zad2">
+                <tytuł>LDZ01-7: Kolor menu</tytuł>
+                <opis>Zmienić kolor menu na ładniejszy</opis>
+                <wykonawca>002</wykonawca>
+            </zadanie>
+
+            <zadanie id="zad3">
+                <tytuł>WDS01-1: Kawa</tytuł>
+                <opis>Zrobić przełożonemu kawę</opis>
+                <wykonawca>003</wykonawca>
+            </zadanie>
+
+            <zadanie id="zad4">
+                <tytuł>LDZ02-1: Wyczyścić bazę</tytuł>
+                <opis>Usunąć starych użytkowników</opis>
+                <wykonawca>004</wykonawca>
+            </zadanie>
+
+            <zadanie id="zad5">
+                <tytuł>LDZ02-1: Nowa tabela w bazie</tytuł>
+                <opis>Dodać tabelę</opis>
+                <wykonawca>005</wykonawca>
+            </zadanie>
+
+            <zadanie id="zad6">
+                <tytuł>WWA01-15: Rewolta</tytuł>
+                <opis>Odsunąć od władzy lidera projektu</opis>
+                <wykonawca>001</wykonawca>
+            </zadanie>
+        </tablica>
+
+        <tablica status="realizowane">
+            <zadanie id="zad7">
+                <tytuł>LDZ01-2: Dostęp</tytuł>
+                <opis>Nadać odpowiednie dostępy</opis>
+                <wykonawca>002</wykonawca>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+            </zadanie>
+            <zadanie id="zad8">
+                <tytuł>LDZ01-3: Restart servera</tytuł>
+                <opis>Zrestartować server bazy oddziału dev</opis>
+                <wykonawca>002</wykonawca>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+            </zadanie>
+        </tablica>
+
+        <tablica status="zamknięte">
+            <zadanie id="zad9">
+                <tytuł>LDZ01-1: Repozytorium</tytuł>
+                <opis>Stworzyć repozytorium</opis>
+                <wykonawca>003</wykonawca>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>11-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad10">
+                <tytuł>WWA02-1: Podatność na XSS</tytuł>
+                <opis>Usunąć!!!</opis>
+                <wykonawca>003</wykonawca>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>11-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+
+            <zadanie id="zad11">
+                <tytuł>WWA02-2: Audyt</tytuł>
+                <opis>Przeprowadzić audyt bezpieczeństwa</opis>
+                <wykonawca>003</wykonawca>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>11-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+        </tablica>
+
+    </zadania>
+
     <użytkownicy nazwa="Pracownicy">
         <użytkownik id="001">
             <imię>Jan</imię>
@@ -40,175 +139,6 @@
         </użytkownik>
 
     </użytkownicy>
-
-    <zadania>
-        <tablica status="otwarte">
-            <zadanie id="zad1">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 1</opis>
-                <wykonawca>001</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-
-            <zadanie id="zad2">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 2</opis>
-                <wykonawca>002</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-
-            <zadanie id="zad3">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 3</opis>
-                <wykonawca>003</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-
-            <zadanie id="zad4">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 4</opis>
-                <wykonawca>004</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-
-            <zadanie id="zad5">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 5</opis>
-                <wykonawca>005</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-
-            <zadanie id="zad6">
-                <tytuł>Otwarte</tytuł>
-                <opis>Zadanie 6</opis>
-                <wykonawca>001</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-        </tablica>
-
-        <tablica status="realizowane">
-            <zadanie id="zad7">
-                <tytuł>Realizowane</tytuł>
-                <opis>Zadanie 7</opis>
-                <wykonawca>002</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień></dzień>
-                        <miesiąc></miesiąc>
-                        <rok></rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-        </tablica>
-
-        <tablica status="zamknięte">
-            <zadanie id="zad8">
-                <tytuł>Zamknięte</tytuł>
-                <opis>Zadanie 8</opis>
-                <wykonawca>003</wykonawca>
-                <data_rozpoczęcia>
-                    <data>
-                        <dzień>11</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_rozpoczęcia>
-                <data_ukończenia>
-                    <data>
-                        <dzień>16</dzień>
-                        <miesiąc>03</miesiąc>
-                        <rok>2019</rok>
-                    </data>
-                </data_ukończenia>
-            </zadanie>
-        </tablica>
-
-    </zadania>
 
     <stopka>
         <ostatnia_modyfikacja autor="pawcio">
