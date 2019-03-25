@@ -33,6 +33,18 @@ użytkownik
     font-family: "Trebuchet MS", "Comic Sans MS";
 }
 
+nr_tel:before{
+    content: "Nr. telefonu: ";
+}
+
+email:before{
+    content: "Email: ";
+}
+
+dział:before{
+    content: "Dział: ";
+}
+
 tablica_zadań::before
 {
     padding-left: 50px;
