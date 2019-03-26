@@ -5,6 +5,15 @@ użytkownicy
     background-color: #7cbee9;
 }
 
+użytkownik>*
+{
+    display: block;
+}
+
+użytkownik>imię, nazwisko{
+    display: inline-block;
+}
+
 użytkownicy:before
 {
     text-align: center;
