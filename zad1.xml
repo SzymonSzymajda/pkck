@@ -89,6 +89,66 @@
                     <data>17-03-19</data>
                 </data_ukończenia>
             </zadanie>
+            <zadanie id="zad12" wykonawca="003">
+                <tytuł>WDS01-2: Otwarcie</tytuł>
+                <opis>Czego?</opis>
+                <data_rozpoczęcia>
+                    <data>17-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>17-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+            <zadanie id="zad13" wykonawca="003">
+                <tytuł>WDS01-3: Zamknięcie</tytuł>
+                <opis>Parasola</opis>
+                <data_rozpoczęcia>
+                    <data>18-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>19-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+            <zadanie id="zad14" wykonawca="003">
+                <tytuł>WWA02-3: Zatrudnić nową sprzątaczkę</tytuł>
+                <opis>Przeprowadzić rekrutację na konserwatora powierzchni płaskich</opis>
+                <data_rozpoczęcia>
+                    <data>12-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>12-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+            <zadanie id="zad15" wykonawca="003">
+                <tytuł>WWA02-4: Stare repozytorium</tytuł>
+                <opis>Usunąć stare repozytorium</opis>
+                <data_rozpoczęcia>
+                    <data>20-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>21-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+            <zadanie id="zad16" wykonawca="003">
+                <tytuł>WWA02-5: Iść na obiad</tytuł>
+                <opis>Udać siędo wybranej restauracji</opis>
+                <data_rozpoczęcia>
+                    <data>11-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>23-03-19</data>
+                </data_ukończenia>
+            </zadanie>
+            <zadanie id="zad17" wykonawca="003">
+                <tytuł>WWA02-6: Konferencja</tytuł>
+                <opis>Przeprowadzić konsultacje ze zleceniodawcą</opis>
+                <data_rozpoczęcia>
+                    <data>22-03-19</data>
+                </data_rozpoczęcia>
+                <data_ukończenia>
+                    <data>2-03-19</data>
+                </data_ukończenia>
+            </zadanie>
         </tablica>
 
     </zadania>
