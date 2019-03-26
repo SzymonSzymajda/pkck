@@ -2,7 +2,7 @@ użytkownicy
 {
     display: grid;
     border-radius: 5px;
-    background-color: #7cbee9;
+    background-color: aliceblue;
 }
 
 użytkownik>*
@@ -12,6 +12,8 @@ użytkownik>*
 
 użytkownik>imię, nazwisko{
     display: inline-block;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 użytkownik:before{
@@ -43,23 +45,33 @@ użytkownik
     margin: 10px 20px 10px 20px;
     padding: 0.75em 1em;
     width: auto;
-    border-style: solid;
-    border-width: 1px;
-    border-left-width: 10px;
-    border-color: green;
     font-family: "Trebuchet MS", "Comic Sans MS";
+    font-size: 150%;
 }
 
-nr_tel:before{
+nr_tel:before
+{
     content: "Nr. telefonu: ";
 }
 
-email:before{
+email:before
+{
     content: "Email: ";
 }
 
-dział:before{
+dział:before
+{
     content: "Dział: ";
+}
+
+data_rozpoczęcia:before
+{
+    content: "Rozpoczęto: ";
+}
+
+data_ukończenia:before
+{
+    content: "Zakończono: ";
 }
 
 tablica_zadań::before

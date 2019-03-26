@@ -17,7 +17,7 @@
 <!ELEMENT użytkownicy (użytkownik+)>
 <!ATTLIST użytkownicy
         nazwa CDATA #IMPLIED>
-<!ELEMENT użytkownik (imię,nazwisko,dział,(nr_tel|email))>
+<!ELEMENT użytkownik (imię,nazwisko,dział,(nr_tel|email)*)>
 <!ATTLIST użytkownik
         id ID #REQUIRED>
 <!ELEMENT imię (#PCDATA)>
