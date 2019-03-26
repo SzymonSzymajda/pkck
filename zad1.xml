@@ -6,56 +6,49 @@
 
     <zadania>
         <tablica status="otwarte">
-            <zadanie id="zad1">
+            <zadanie id="zad1" wykonawca="003">
                 <tytuł>LDZ01-4: Błąd uruchomienia</tytuł>
                 <opis>Naprawić błąd środowiska</opis>
-                <wykonawca>001</wykonawca>
             </zadanie>
 
-            <zadanie id="zad2">
+            <zadanie id="zad2" wykonawca="002">
                 <tytuł>LDZ01-7: Kolor menu</tytuł>
                 <opis>Zmienić kolor menu na ładniejszy</opis>
-                <wykonawca>002</wykonawca>
             </zadanie>
 
-            <zadanie id="zad3">
+            <zadanie id="zad3" wykonawca="005">
                 <tytuł>WDS01-1: Kawa</tytuł>
                 <opis>Zrobić przełożonemu kawę</opis>
-                <wykonawca>003</wykonawca>
             </zadanie>
 
-            <zadanie id="zad4">
+            <zadanie id="zad4" wykonawca="004">
                 <tytuł>LDZ02-1: Wyczyścić bazę</tytuł>
                 <opis>Usunąć starych użytkowników</opis>
-                <wykonawca>004</wykonawca>
             </zadanie>
 
-            <zadanie id="zad5">
+            <zadanie id="zad5" wykonawca="002">
                 <tytuł>LDZ02-1: Nowa tabela w bazie</tytuł>
                 <opis>Dodać tabelę</opis>
-                <wykonawca>005</wykonawca>
             </zadanie>
 
-            <zadanie id="zad6">
+            <zadanie id="zad6" wykonawca="001">
                 <tytuł>WWA01-15: Rewolta</tytuł>
                 <opis>Odsunąć od władzy lidera projektu</opis>
-                <wykonawca>001</wykonawca>
             </zadanie>
         </tablica>
 
         <tablica status="realizowane">
-            <zadanie id="zad7">
+            <zadanie id="zad7" wykonawca="002">
                 <tytuł>LDZ01-2: Dostęp</tytuł>
                 <opis>Nadać odpowiednie dostępy</opis>
-                <wykonawca>002</wykonawca>
                 <data_rozpoczęcia>
                     <data>11-03-19</data>
                 </data_rozpoczęcia>
             </zadanie>
-            <zadanie id="zad8">
+
+            <zadanie id="zad8" wykonawca="001">
                 <tytuł>LDZ01-3: Restart servera</tytuł>
                 <opis>Zrestartować server bazy oddziału dev</opis>
-                <wykonawca>002</wykonawca>
                 <data_rozpoczęcia>
                     <data>11-03-19</data>
                 </data_rozpoczęcia>
@@ -63,10 +56,10 @@
         </tablica>
 
         <tablica status="zamknięte">
-            <zadanie id="zad9">
+
+            <zadanie id="zad9" wykonawca="002">
                 <tytuł>LDZ01-1: Repozytorium</tytuł>
                 <opis>Stworzyć repozytorium</opis>
-                <wykonawca>003</wykonawca>
                 <data_rozpoczęcia>
                     <data>11-03-19</data>
                 </data_rozpoczęcia>
@@ -75,10 +68,9 @@
                 </data_ukończenia>
             </zadanie>
 
-            <zadanie id="zad10">
+            <zadanie id="zad10" wykonawca="003">
                 <tytuł>WWA02-1: Podatność na XSS</tytuł>
                 <opis>Usunąć!!!</opis>
-                <wykonawca>003</wykonawca>
                 <data_rozpoczęcia>
                     <data>11-03-19</data>
                 </data_rozpoczęcia>
@@ -87,10 +79,9 @@
                 </data_ukończenia>
             </zadanie>
 
-            <zadanie id="zad11">
+            <zadanie id="zad11" wykonawca="003">
                 <tytuł>WWA02-2: Audyt</tytuł>
                 <opis>Przeprowadzić audyt bezpieczeństwa</opis>
-                <wykonawca>003</wykonawca>
                 <data_rozpoczęcia>
                     <data>11-03-19</data>
                 </data_rozpoczęcia>
@@ -106,48 +97,39 @@
         <użytkownik id="001">
             <imię>Jan</imię>
             <nazwisko>Kowalski</nazwisko>
-            <nr_tel>111-222-333</nr_tel>
-            <email>jan.kowalski@kompro.tzvl</email>
             <dział>LDZ01</dział>
+            <email>jan.kowalski@kompro.tzvl</email>
         </użytkownik>
         <użytkownik id="002">
             <imię>Jan</imię>
             <nazwisko>Nowak</nazwisko>
-            <nr_tel>222-333-444</nr_tel>
-            <email>jan.nowak@kompro.tzvl</email>
             <dział>WWA01</dział>
+            <nr_tel>222-333-444</nr_tel>
         </użytkownik>
         <użytkownik id="003">
             <imię>Jan</imię>
             <nazwisko>Nowacki</nazwisko>
-            <nr_tel>333-222-111</nr_tel>
-            <email>jan.nowacki@kompro.tzvl</email>
             <dział>WWA02</dział>
+            <email>jan.nowacki@kompro.tzvl</email>
         </użytkownik>
         <użytkownik id="004">
             <imię>Jan</imię>
             <nazwisko>Kowal</nazwisko>
-            <nr_tel>999-888-777</nr_tel>
-            <email>jan.kowal@kompro.tzvl</email>
             <dział>LDZ01</dział>
+            <email>jan.kowal@kompro.tzvl</email>
         </użytkownik>
         <użytkownik id="005">
             <imię>Tomasz</imię>
             <nazwisko>Terka</nazwisko>
-            <nr_tel>000-000-000</nr_tel>
-            <email>tomasz.terka@mcdonalds.com</email>
             <dział>WDS01</dział>
+            <email>tomasz.terka@mcdonalds.com</email>
         </użytkownik>
 
     </użytkownicy>
 
     <stopka>
         <ostatnia_modyfikacja autor="pawcio">
-            <data>
-                <dzień>11</dzień>
-                <miesiąc>03</miesiąc>
-                <rok>2019</rok>
-            </data>
+            <data>21-03-2019</data>
         </ostatnia_modyfikacja>
         <autorzy>
             <autor id="pawcio">

@@ -108,6 +108,11 @@ zadanie
     max-height: 4%;
 }
 
+zadanie:hover:after
+{
+    content: "Wykonawaca: "attr(wykonawca);
+}
+
 zadanie>*
 {
     opacity: 0;
