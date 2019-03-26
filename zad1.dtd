@@ -33,7 +33,7 @@
 <!ELEMENT miesiąc (#PCDATA)>
 <!ELEMENT rok (#PCDATA)>
 <!ELEMENT autorzy (autor+)>
-<!ELEMENT autor (nr_indeksu,imię+,nazwisko))>
+<!ELEMENT autor (nr_indeksu,imię+,nazwisko)>
 <!ATTLIST autor
         id CDATA #REQUIRED>
 <!ELEMENT nr_indeksu (#PCDATA)>

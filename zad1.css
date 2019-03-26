@@ -1,29 +1,19 @@
-użytkownicy
+/*region Tablica zadań*/
+tablica_zadań:before
 {
-    display: grid;
-    border-radius: 5px;
-    background-color: aliceblue;
+    padding-left: 50px;
+    content: "Tablica zadań";
+    font-family: "Trebuchet MS", "Comic Sans MS";
+
 }
 
-użytkownik>*
+tablica_zadań>*
 {
-    display: block;
+    font-size: 1vw;
 }
+/*endregion*/
 
-użytkownik>imię, nazwisko{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 150%;
-}
-
-użytkownik:before{
-    content: url("Terka.png");
-    float: right;
-    display: flex;
-    height: 50px;
-    width: 50px;
-}
-
+/*region Użytkownicy*/
 użytkownicy:before
 {
     text-align: center;
@@ -38,17 +28,51 @@ użytkownicy:before
     padding-bottom: 5px;
 }
 
+użytkownicy
+{
+    display: grid;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+/*endregion*/
+
+/*region Użytkownik*/
+użytkownik:before
+{
+    content: url("Terka.png");
+    float: right;
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
 użytkownik
 {
     background-color: white;
     display: block;
     margin: 10px 20px 10px 20px;
     padding: 0.75em 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
     width: auto;
     font-family: "Trebuchet MS", "Comic Sans MS";
     font-size: 150%;
 }
 
+użytkownik>*
+{
+    display: block;
+}
+
+użytkownik>imię, nazwisko{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 150%;
+}
+/*endregion*/
+
+/*region Użytkownik - elementy*/
 nr_tel:before
 {
     content: "Nr. telefonu: ";
@@ -73,47 +97,57 @@ data_ukończenia:before
 {
     content: "Zakończono: ";
 }
+/*endregion*/
 
-tablica_zadań::before
-{
-    padding-left: 50px;
-    content: "Tablica zadań";
-    font-family: "Trebuchet MS", "Comic Sans MS";
-
-}
-
-tablica_zadań>*
-{
-    font-size: 1vw;
-}
-
+/*region Zadania*/
 zadania
 {
     display: grid;
     background-color: #7cbee9;
 }
+/*endregion*/
 
-tytuł
+/*region Tablica*/
+tablica:before
 {
-    font-weight: bold;
-    font-size: larger;
-}
-
-zadanie>*
-{
+    text-align: center;
+    letter-spacing: 0.2vw;
+    font-family: "Trebuchet MS", "Comic Sans MS";
+    border-bottom-color: black;
     display: block;
+    font-size: 2vw;
+    content: attr(status);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    padding-bottom: 5px;
 }
 
-opis:before
+tablica
 {
-    content: "Opis: ";
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 20px 20px 20px 20px;
 }
 
-wykonawca:before
+tablica[status="otwarte"]
 {
-    content: "Wykonawca: ";
+    grid-column: 1;
+    /*margin: 2em 6em 2em 6em;*/
 }
 
+tablica[status="realizowane"]
+{
+    grid-column: 2;
+    /*margin: 2em 6em 2em 6em;*/
+}
+
+tablica[status="zamknięte"]
+{
+    grid-column: 3;
+}
+/*endregion*/
+
+/*region Zadanie*/
 zadanie
 {
     background-color: white;
@@ -128,11 +162,46 @@ zadanie
     max-height: 4%;
 }
 
-zadanie:hover:after
+zadanie>*
 {
-    content: "Wykonawaca: "attr(wykonawca);
+    display: block;
+}
+/*endregion*/
+
+/*region Zadanie - elementy i kolor marginesu*/
+tytuł
+{
+    font-weight: bold;
+    font-size: larger;
 }
 
+opis:before
+{
+    content: "Opis: ";
+}
+
+wykonawca:before
+{
+    content: "Wykonawca: ";
+}
+
+tablica[status="zamknięte"] > zadanie
+{
+    border-left-color: #9dff3a;
+}
+
+tablica[status="otwarte"] > zadanie
+{
+    border-left-color: #ff8761;
+}
+
+tablica[status="realizowane"] > zadanie
+{
+    border-left-color: #ffe662;
+}
+/*endregion*/
+
+/*region Zadanie - animacja*/
 zadanie>*
 {
     opacity: 0;
@@ -145,6 +214,7 @@ zadanie>tytuł
 
 zadanie:hover
 {
+    transition: all 0.5s;
     background-color: whitesmoke;
     max-height: 100%;
 }
@@ -153,59 +223,28 @@ zadanie:hover
 zadanie:hover>*
 {
     opacity: 1;
+    transition: all 0.5s;
 }
 
-tablica
+zadanie:hover:after
 {
-    border-radius: 5px;
-    background-color: aliceblue;
-    margin: 20px 20px 20px 20px;
+    content: "Wykonawaca: "attr(wykonawca);
 }
+/*endregion*/
 
-tablica::before
+/*region Stopka*/
+stopka>*
 {
-    text-align: center;
-    letter-spacing: 0.2vw;
-    font-family: "Trebuchet MS", "Comic Sans MS";
-    border-bottom-color: black;
     display: block;
-    font-size: 2vw;
-    content: attr(status);
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    padding-bottom: 5px;
 }
 
-tablica[status="otwarte"]
+autorzy>*
 {
-    grid-column: 1;
-    /*margin: 2em 6em 2em 6em;*/
+    display: block;
 }
 
-tablica[status="otwarte"] > zadanie
+ostatnia_modyfikacja:before
 {
-    border-left-color: #ff8761;
+    content: 'Ostatnia modyfikacja: ';
 }
-
-tablica[status="realizowane"]
-{
-    grid-column: 2;
-    /*margin: 2em 6em 2em 6em;*/
-}
-
-tablica[status="realizowane"] > zadanie
-{
-    border-left-color: #ffe662;
-}
-
-tablica[status="zamknięte"]
-{
-    grid-column: 3;
-}
-
-tablica[status="zamknięte"] > zadanie
-{
-    border-left-color: #9dff3a;
-}
-
-
+/*endregion*/
