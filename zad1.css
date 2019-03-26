@@ -14,6 +14,14 @@ użytkownik>imię, nazwisko{
     display: inline-block;
 }
 
+użytkownik:before{
+    content: url("Terka.png");
+    float: right;
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
 użytkownicy:before
 {
     text-align: center;
@@ -182,3 +190,5 @@ tablica[status="zamknięte"] > zadanie
 {
     border-left-color: #9dff3a;
 }
+
+
