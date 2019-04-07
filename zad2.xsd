@@ -109,9 +109,7 @@
   <xs:element name="użytkownik">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="imię" />
-        <xs:element ref="nazwisko" />
-        <xs:element ref="dział" />
+        <xs:group ref="podstawoweInformacje"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="nr_tel" />
           <xs:element ref="email" />
@@ -123,10 +121,18 @@
                     use="required" />
     </xs:complexType>
   </xs:element>
-  
-  <xs:element name="imię" type="xs:string" />
- 
-  <xs:element name="nazwisko" type="xs:string" />
+
+  <xs:group name="podstawoweInformacje">
+    <xs:element name="imię" type="xs:string" />
+    <xs:element name="nazwisko" type="xs:string" />
+    <xs:element name="dział" type="działType" />
+  </xs:group>
+
+  <xs:simpleType name="działType">
+    <xs:restriction>
+      <xs:pattern value="[A-Z]{3}\d+"/>
+    </xs:restriction>
+  </xs:simpleType>
  
   <xs:element name="nr_tel" type="telType" />
   <xs:simpleType name="telType">
@@ -139,13 +145,6 @@
   <xs:simpleType name="emailType">
     <xs:restriction>
       <xs:pattern value="(.)*@(.)*\.[a-zA-Z]+"/>
-    </xs:restriction>
-  </xs:simpleType>
- 
-  <xs:element name="dział" type="działType" />
-  <xs:simpleType name="działType">
-    <xs:restriction>
-      <xs:pattern value="[A-Z]{3}\d+"/>
     </xs:restriction>
   </xs:simpleType>
 
