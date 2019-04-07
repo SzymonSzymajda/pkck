@@ -69,7 +69,8 @@
   <xs:element name="tytuł" type="tytułType"/>
   <xs:simpleType name="tytułType">
     <xs:restriction>
-      <xs:pattern value="[A-Z]{3}\d+-\d+"/>
+      <xs:pattern value="[A-Z]{3}\d+-\d+: (.)+"/>
+      <xs:maxLength value="50"/>
     </xs:restriction>
   </xs:simpleType>
 
