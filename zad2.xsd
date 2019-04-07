@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/zad1" elementFormDefault="qualified" targetNamespace="http://tempuri.org/zad1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tablica_zadań">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zadania" />
+        <xs:element ref="użytkownicy" />
+        <xs:element ref="stopka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zadania">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="tablica" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tablica">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="zadanie" />
+      </xs:sequence>
+      <xs:attribute name="status" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zadanie">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="tytuł" />
+          <xs:element ref="opis" />
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="tytuł" />
+          <xs:element ref="opis" />
+          <xs:element ref="data_rozpoczęcia" />
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="tytuł" />
+          <xs:element ref="opis" />
+          <xs:element ref="data_rozpoczęcia" />
+          <xs:element ref="data_ukończenia" />
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+      <xs:attribute name="wykonawca" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tytuł" type="xs:string" />
+  <xs:element name="opis" type="xs:string" />
+  <xs:element name="data_rozpoczęcia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data" type="xs:string" />
+  <xs:element name="data_ukończenia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="użytkownicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="użytkownik" />
+      </xs:sequence>
+      <xs:attribute name="nazwa" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="użytkownik">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="imię" />
+        <xs:element ref="nazwisko" />
+        <xs:element ref="dział" />
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="nr_tel" />
+          <xs:element ref="email" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imię" type="xs:string" />
+  <xs:element name="nazwisko" type="xs:string" />
+  <xs:element name="nr_tel" type="xs:string" />
+  <xs:element name="email" type="xs:string" />
+  <xs:element name="dział" type="xs:string" />
+  <xs:element name="stopka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="ostatnia_modyfikacja" />
+        <xs:element ref="autorzy" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ostatnia_modyfikacja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data" />
+      </xs:sequence>
+      <xs:attribute name="autor" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dzień" type="xs:string" />
+  <xs:element name="miesiąc" type="xs:string" />
+  <xs:element name="rok" type="xs:string" />
+  <xs:element name="autorzy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nr_indeksu" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="imię" />
+        <xs:element ref="nazwisko" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nr_indeksu" type="xs:string" />
+</xs:schema>
