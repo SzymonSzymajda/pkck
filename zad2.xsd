@@ -48,7 +48,8 @@
       <xs:sequence>
         <xs:element ref="tytuł" />
         <xs:element ref="opis" />
-        <xs:choice>
+        <xs:element ref="priorytet" />
+        <xs:choice minOccurs="0">
           <xs:element ref="data_rozpoczęcia"/>
           <xs:sequence>
             <xs:element ref="data_rozpoczęcia"/>
@@ -75,6 +76,15 @@
   </xs:simpleType>
 
   <xs:element name="opis" type="xs:string" />
+
+  <xs:element name="priorytet" type="xs:simpleType">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="10"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
 
   <xs:element name="data_rozpoczęcia">
     <xs:complexType>
