@@ -36,7 +36,7 @@
   </xs:element>
 
   <xs:simpleType name="statusType">
-    <xs:restriction>
+    <xs:restriction base="xs:string">
       <xs:enumeration value="otwarte"/>
       <xs:enumeration value="realizowane"/>
       <xs:enumeration value="zamknięte"/>
@@ -50,11 +50,11 @@
         <xs:element ref="opis" />
         <xs:element ref="priorytet" />
         <xs:choice minOccurs="0">
-          <xs:element ref="data_rozpoczęcia"/>
           <xs:sequence>
             <xs:element ref="data_rozpoczęcia"/>
-            <xs:element ref="data_ukończenia"/>
+            <xs:element ref="data_ukończenia" minOccurs="0"/>
           </xs:sequence>
+          <xs:element ref="data_rozpoczęcia"/>
         </xs:choice>
       </xs:sequence>
 
@@ -69,7 +69,7 @@
 
   <xs:element name="tytuł" type="tytułType"/>
   <xs:simpleType name="tytułType">
-    <xs:restriction>
+    <xs:restriction base="xs:string">
       <xs:pattern value="[A-Z]{3}\d+-\d+: (.)+"/>
       <xs:maxLength value="50"/>
     </xs:restriction>
@@ -77,7 +77,7 @@
 
   <xs:element name="opis" type="xs:string" />
 
-  <xs:element name="priorytet" type="xs:simpleType">
+  <xs:element name="priorytet">
     <xs:simpleType>
       <xs:restriction base="xs:integer">
         <xs:minInclusive value="1"/>
@@ -125,6 +125,7 @@
           <xs:element ref="nr_tel" />
           <xs:element ref="email" />
         </xs:choice>
+        <xs:element ref="pensja" minOccurs="0"/>
       </xs:sequence>
       
       <xs:attribute name="id" 
@@ -141,24 +142,34 @@
   </xs:group>
 
   <xs:simpleType name="działType">
-    <xs:restriction>
+    <xs:restriction base="xs:string">
       <xs:pattern value="[A-Z]{3}\d+"/>
     </xs:restriction>
   </xs:simpleType>
  
   <xs:element name="nr_tel" type="telType" />
   <xs:simpleType name="telType">
-    <xs:restriction>
+    <xs:restriction base="xs:integer">
       <xs:pattern value="\d{9}"/>
     </xs:restriction>
   </xs:simpleType>
  
   <xs:element name="email" type="emailType" />
   <xs:simpleType name="emailType">
-    <xs:restriction>
+    <xs:restriction base="xs:string">
       <xs:pattern value="(.)*@(.)*\.[a-zA-Z]+"/>
     </xs:restriction>
   </xs:simpleType>
+
+  <xs:element name="pensja">
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="2250"/>
+        <xs:pattern value="\d+\.\d{2}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
 
   <xs:element name="stopka">
     <xs:complexType>

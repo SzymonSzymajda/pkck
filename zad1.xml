@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="zad1.css" type="text/css" ?>
-<!DOCTYPE tablica_zadań SYSTEM "zad1.dtd">
+<!--<!DOCTYPE tablica_zadań SYSTEM "zad1.dtd">-->
 
-<tablica_zadań>
+<tablica_zadań
+        xmlns="http://tempuri.org/zad1"
+>
 
     <zadania>
         <tablica status="otwarte">
             <zadanie id="zad1" wykonawca="U003">
                 <tytuł>LDZ01-4: Błąd uruchomienia</tytuł>
                 <opis>Naprawić błąd środowiska</opis>
+                <priorytet>1</priorytet>
             </zadanie>
 
             <zadanie id="zad2" wykonawca="U002">
                 <tytuł>LDZ01-7: Kolor menu</tytuł>
                 <opis>Zmienić kolor menu na ładniejszy</opis>
+                <priorytet>1</priorytet>
             </zadanie>
 
             <zadanie id="zad3" wykonawca="U005">
                 <tytuł>WDS01-1: Kawa</tytuł>
                 <opis>Zrobić przełożonemu kawę</opis>
+                <priorytet>1</priorytet>
             </zadanie>
 
             <zadanie id="zad4" wykonawca="U004">
                 <tytuł>LDZ02-1: Wyczyścić bazę</tytuł>
                 <opis>Usunąć starych użytkowników</opis>
+                <priorytet>1</priorytet>
             </zadanie>
 
             <zadanie id="zad5" wykonawca="U002">
                 <tytuł>LDZ02-1: Nowa tabela w bazie</tytuł>
                 <opis>Dodać tabelę</opis>
+                <priorytet>1</priorytet>
             </zadanie>
 
             <zadanie id="zad6" wykonawca="U001">
                 <tytuł>WWA01-15: Rewolta</tytuł>
                 <opis>Odsunąć od władzy lidera projektu</opis>
+                <priorytet>1</priorytet>
             </zadanie>
         </tablica>
 
@@ -41,16 +49,18 @@
             <zadanie id="zad7" wykonawca="U002">
                 <tytuł>LDZ01-2: Dostęp</tytuł>
                 <opis>Nadać odpowiednie dostępy</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>21-03-19</data>
+                    <data>2019-03-12</data>
                 </data_rozpoczęcia>
             </zadanie>
 
             <zadanie id="zad8" wykonawca="U001">
                 <tytuł>LDZ01-3: Restart servera</tytuł>
                 <opis>Zrestartować server bazy oddziału dev</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>18-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
             </zadanie>
         </tablica>
@@ -60,93 +70,102 @@
             <zadanie id="zad9" wykonawca="U002">
                 <tytuł>LDZ01-1: Repozytorium</tytuł>
                 <opis>Stworzyć repozytorium</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>20-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>21-03-19</data>
+                    <data>2019-03-20</data>
                 </data_ukończenia>
             </zadanie>
 
             <zadanie id="zad10" wykonawca="U003">
                 <tytuł>WWA02-1: Podatność na XSS</tytuł>
                 <opis>Usunąć!!!</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>11-03-19</data>
+                    <data>2019-03-22</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>15-03-19</data>
+                    <data>2019-03-28</data>
                 </data_ukończenia>
             </zadanie>
 
             <zadanie id="zad11" wykonawca="U003">
                 <tytuł>WWA02-2: Audyt</tytuł>
                 <opis>Przeprowadzić audyt bezpieczeństwa</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>16-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>17-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad12" wykonawca="U003">
                 <tytuł>WDS01-2: Otwarcie</tytuł>
                 <opis>Czego?</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>17-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>17-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad13" wykonawca="U003">
                 <tytuł>WDS01-3: Zamknięcie</tytuł>
                 <opis>Parasola</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>18-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>19-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad14" wykonawca="U003">
                 <tytuł>WWA02-3: Zatrudnić nową sprzątaczkę</tytuł>
                 <opis>Przeprowadzić rekrutację na konserwatora powierzchni płaskich</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>12-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>12-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad15" wykonawca="U003">
                 <tytuł>WWA02-4: Stare repozytorium</tytuł>
                 <opis>Usunąć stare repozytorium</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>20-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>21-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad16" wykonawca="U003">
                 <tytuł>WWA02-5: Iść na obiad</tytuł>
                 <opis>Udać siędo wybranej restauracji</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>11-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>23-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
             <zadanie id="zad17" wykonawca="U003">
                 <tytuł>WWA02-6: Konferencja</tytuł>
                 <opis>Przeprowadzić konsultacje ze zleceniodawcą</opis>
+                <priorytet>1</priorytet>
                 <data_rozpoczęcia>
-                    <data>22-03-19</data>
+                    <data>2019-03-19</data>
                 </data_rozpoczęcia>
                 <data_ukończenia>
-                    <data>2-03-19</data>
+                    <data>2019-03-19</data>
                 </data_ukończenia>
             </zadanie>
         </tablica>
@@ -164,7 +183,7 @@
             <imię>Jan</imię>
             <nazwisko>Nowak</nazwisko>
             <dział>WWA01</dział>
-            <nr_tel>222-333-444</nr_tel>
+            <nr_tel>222333444</nr_tel>
         </użytkownik>
         <użytkownik id="U003">
             <imię>Jan</imię>
@@ -182,15 +201,16 @@
             <imię>Tomasz</imię>
             <nazwisko>Terka</nazwisko>
             <dział>WDS01</dział>
-            <nr_tel>1515612612</nr_tel>
+            <nr_tel>525646921</nr_tel>
             <email>tomasz.terka@mcdonalds.com</email>
+            <pensja>2250.00</pensja>
         </użytkownik>
 
     </użytkownicy>
 
     <stopka>
         <ostatnia_modyfikacja autor="pawcio">
-            <data>21-03-2019</data>
+            <data>2019-04-07</data>
         </ostatnia_modyfikacja>
         <autorzy>
             <autor id="pawcio">
