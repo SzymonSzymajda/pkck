@@ -110,6 +110,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:group ref="podstawoweInformacje"/>
+        <xs:element name="dział" type="działType" />
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="nr_tel" />
           <xs:element ref="email" />
@@ -123,9 +124,10 @@
   </xs:element>
 
   <xs:group name="podstawoweInformacje">
-    <xs:element name="imię" type="xs:string" />
-    <xs:element name="nazwisko" type="xs:string" />
-    <xs:element name="dział" type="działType" />
+    <xs:sequence>
+      <xs:element name="imię" type="xs:string" />
+      <xs:element name="nazwisko" type="xs:string" />
+    </xs:sequence>
   </xs:group>
 
   <xs:simpleType name="działType">
@@ -184,10 +186,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="nr_indeksu" />
-        <xs:element minOccurs="1"
-                    maxOccurs="unbounded"
-                    ref="imię" />
-        <xs:element ref="nazwisko" />
+        <xs:group ref="podstawoweInformacje"/>
       </xs:sequence>
       <xs:attribute name="id"
                     type="xs:string"
