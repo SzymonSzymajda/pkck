@@ -213,7 +213,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="nr_indeksu" />
-        <xs:group ref="uzytkownikInfo"/>
+        <xs:group ref="użytkownikInfo"/>
       </xs:sequence>
       <xs:attribute name="id"
                     type="xs:string"
