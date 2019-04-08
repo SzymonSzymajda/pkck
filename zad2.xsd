@@ -45,19 +45,22 @@
 
   <xs:element name="zadanie">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="tytuł" />
-        <xs:element ref="opis" />
-        <xs:element ref="priorytet" />
-        <xs:choice minOccurs="0">
-          <xs:sequence>
-            <xs:element ref="data_rozpoczęcia"/>
-            <xs:element ref="data_ukończenia" minOccurs="0"/>
-          </xs:sequence>
-          <xs:element ref="data_rozpoczęcia"/>
-        </xs:choice>
-      </xs:sequence>
+      <xs:choice>
+        <xs:sequence>
+          <xs:group ref="zadanieInfo"/>
+        </xs:sequence>
 
+        <xs:sequence>
+          <xs:group ref="zadanieInfo"/>
+          <xs:element ref="data_rozpoczęcia"/>
+        </xs:sequence>
+
+        <xs:sequence>
+          <xs:group ref="zadanieInfo"/>
+          <xs:element ref="data_rozpoczęcia"/>
+          <xs:element ref="data_ukończenia"/>
+        </xs:sequence>
+      </xs:choice>
       <xs:attribute name="id"
                     type="xs:ID"
                     use="required" />
@@ -67,7 +70,14 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:element name="tytuł" type="tytułType"/>
+  <xs:group name="zadanieInfo">
+    <xs:sequence>
+      <xs:element name="tytuł" type="tytułType"/>
+      <xs:element name="opis" type="xs:string" />
+      <xs:element name="priorytet" type="priorytetType"/>
+    </xs:sequence>
+  </xs:group>
+
   <xs:simpleType name="tytułType">
     <xs:restriction base="xs:string">
       <xs:pattern value="[A-Z]{3}\d+-\d+: (.)+"/>
@@ -75,16 +85,12 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:element name="opis" type="xs:string" />
-
-  <xs:element name="priorytet">
-    <xs:simpleType>
-      <xs:restriction base="xs:integer">
-        <xs:minInclusive value="1"/>
-        <xs:maxInclusive value="10"/>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:element>
+  <xs:simpleType name="priorytetType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
 
   <xs:element name="data_rozpoczęcia">
     <xs:complexType>
@@ -119,7 +125,7 @@
   <xs:element name="użytkownik">
     <xs:complexType>
       <xs:sequence>
-        <xs:group ref="podstawoweInformacje"/>
+        <xs:group ref="użytkownikInfo"/>
         <xs:element name="dział" type="działType" />
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="nr_tel" />
@@ -134,7 +140,7 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:group name="podstawoweInformacje">
+  <xs:group name="użytkownikInfo">
     <xs:sequence>
       <xs:element name="imię" type="xs:string" />
       <xs:element name="nazwisko" type="xs:string" />
@@ -207,7 +213,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="nr_indeksu" />
-        <xs:group ref="podstawoweInformacje"/>
+        <xs:group ref="uzytkownikInfo"/>
       </xs:sequence>
       <xs:attribute name="id"
                     type="xs:string"
