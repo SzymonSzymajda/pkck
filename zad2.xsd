@@ -12,6 +12,23 @@
         <xs:element ref="stopka" />
       </xs:sequence>
     </xs:complexType>
+
+    <xs:key name="kluczZadanie">
+      <xs:selector xpath="./tablica_zadań/zadania/tablica/zadanie"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+
+    <xs:key name="kluczUżytkownika">
+      <xs:selector xpath="./tablica_zadań/użytkownicy/użytkowni"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+    
+    <xs:keyref name="referencjaUżytkownika" refer="kluczUżytkownika">
+      <xs:selector xpath="./tablica_zadań/zadania/tablica/zadanie"></xs:selector>
+      <xs:field xpath="wykonawca"></xs:field>
+    </xs:keyref>
+
+
   </xs:element>
 
   <xs:element name="zadania">
@@ -58,12 +75,8 @@
         </xs:choice>
       </xs:sequence>
 
-      <xs:attribute name="id"
-                    type="xs:ID"
-                    use="required" />
-      <xs:attribute name="wykonawca"
-                    type="xs:IDREF"
-                    use="required" />
+      <xs:attribute name="id" type="xs:token"/>
+      <xs:attribute name="wykonawca" type="xs:token" />
     </xs:complexType>
   </xs:element>
 
@@ -219,4 +232,5 @@
   </xs:element>
 
   <xs:element name="nr_indeksu" type="xs:string" />
+
 </xs:schema>
