@@ -45,22 +45,19 @@
 
   <xs:element name="zadanie">
     <xs:complexType>
-      <xs:choice>
-        <xs:sequence>
-          <xs:group ref="zadanieInfo"/>
-        </xs:sequence>
+      <xs:sequence>
+        <xs:group ref="zadanieInfo"/>
+        <xs:choice minOccurs="0">
+          <xs:sequence>
+            <xs:element ref="data_rozpoczęcia"/>
+            <xs:choice minOccurs="0">
+              <xs:element ref="data_rozpoczęcia"/>
+              <xs:element ref="data_ukończenia"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
 
-        <xs:sequence>
-          <xs:group ref="zadanieInfo"/>
-          <xs:element ref="data_rozpoczęcia"/>
-        </xs:sequence>
-
-        <xs:sequence>
-          <xs:group ref="zadanieInfo"/>
-          <xs:element ref="data_rozpoczęcia"/>
-          <xs:element ref="data_ukończenia"/>
-        </xs:sequence>
-      </xs:choice>
       <xs:attribute name="id"
                     type="xs:ID"
                     use="required" />
