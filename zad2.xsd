@@ -25,7 +25,7 @@
     
     <xs:keyref name="referencjaUżytkownika" refer="kluczUżytkownika">
       <xs:selector xpath="./tablica_zadań/zadania/tablica/zadanie"></xs:selector>
-      <xs:field xpath="wykonawca"></xs:field>
+      <xs:field xpath="@wykonawca"></xs:field>
     </xs:keyref>
 
 
