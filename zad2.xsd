@@ -22,7 +22,7 @@
       <xs:selector xpath="./tablica_zadań/użytkownicy/użytkowni"/>
       <xs:field xpath="@id"/>
     </xs:key>
-    
+
     <xs:keyref name="referencjaUżytkownika" refer="kluczUżytkownika">
       <xs:selector xpath="./tablica_zadań/zadania/tablica/zadanie"/>
       <xs:field xpath="@wykonawca"/>
@@ -143,9 +143,9 @@
         </xs:choice>
         <xs:element ref="pensja" minOccurs="0"/>
       </xs:sequence>
-      
-      <xs:attribute name="id" 
-                    type="xs:ID" 
+
+      <xs:attribute name="id"
+                    type="xs:ID"
                     use="required" />
     </xs:complexType>
   </xs:element>
@@ -162,14 +162,14 @@
       <xs:pattern value="[A-Z]{3}\d+"/>
     </xs:restriction>
   </xs:simpleType>
- 
+
   <xs:element name="nr_tel" type="telType" />
   <xs:simpleType name="telType">
     <xs:restriction base="xs:integer">
       <xs:pattern value="\d{9}"/>
     </xs:restriction>
   </xs:simpleType>
- 
+
   <xs:element name="email" type="emailType" />
   <xs:simpleType name="emailType">
     <xs:restriction base="xs:string">

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="zad1.css" type="text/css" ?>
+<?xml-stylesheet type="text/xsl" href="xml.xsl"?>
+<!--<?xml-stylesheet href="zad1.css" type="text/css" ?>-->
 <!--<!DOCTYPE tablica_zadań SYSTEM "zad1.dtd">-->
 
-<tablica_zadań
-        xmlns="http://tempuri.org/zad1"
->
+
+<tablica_zadań>
 
     <zadania>
         <tablica status="otwarte">
