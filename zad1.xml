@@ -9,11 +9,7 @@
     <zadania>
         <tablica status="otwarte">
             <zadanie id="zad1" wykonawca="U003">
-                <tytuł>LDZ01-4:
-
-
-
-                    Błąd uruchomienia</tytuł>
+                <tytuł>LDZ01-4: Błąd uruchomienia</tytuł>
                 <opis>Naprawić błąd środowiska</opis>
                 <priorytet>1</priorytet>
             </zadanie>

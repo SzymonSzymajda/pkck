@@ -4,34 +4,39 @@
 
     <xsl:template match="/">
         <xsl:element name="Raport">
-            <xsl:for-each select="tablica_zadań/zadania/tablica/zadanie">
-                <xsl:sort select="tytuł"/>
-                <xsl:element name="Zadanie">
-                    <xsl:variable name="pracownik" select="@wykonawca"/>
-                    <xsl:element name="ID">
-                        <xsl:value-of select="@id"/>
+            <xsl:element name="Zadania">
+                <xsl:for-each select="tablica_zadań/zadania/tablica/zadanie">
+                    <xsl:sort select="tytuł"/>
+                    <xsl:element name="Zadanie">
+                        <xsl:variable name="pracownik" select="@wykonawca"/>
+                        <xsl:element name="ID">
+                            <xsl:value-of select="@id"/>
+                        </xsl:element>
+                        <xsl:element name="Tytuł">
+                            <xsl:value-of select="tytuł"/>
+                        </xsl:element>
+                        <xsl:element name="Status">
+                            <xsl:value-of select="../@status"/>
+                        </xsl:element>
+                        <xsl:for-each select="../../../użytkownicy/użytkownik">
+                            <xsl:if test="@id = $pracownik">
+                                <xsl:element name="Imię">
+                                    <xsl:value-of select="imię"/>
+                                </xsl:element>
+                                <xsl:element name="Nazwisko">
+                                    <xsl:value-of select="nazwisko"/>
+                                </xsl:element>
+                                <xsl:element name="Dział">
+                                    <xsl:value-of select="dział"/>
+                                </xsl:element>
+                                <xsl:element name="Email">
+                                    <xsl:value-of select="email"/>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
                     </xsl:element>
-                    <xsl:element name="Tytuł">
-                        <xsl:value-of select="tytuł"/>
-                    </xsl:element>
-                    <xsl:for-each select="../../../użytkownicy/użytkownik">
-                        <xsl:if test="@id = $pracownik">
-                            <xsl:element name="Imię">
-                                <xsl:value-of select="imię"/>
-                            </xsl:element>
-                            <xsl:element name="Nazwisko">
-                                <xsl:value-of select="nazwisko"/>
-                            </xsl:element>
-                            <xsl:element name="Dział">
-                                <xsl:value-of select="dział"/>
-                            </xsl:element>
-                            <xsl:element name="Email">
-                                <xsl:value-of select="email"/>
-                            </xsl:element>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:element>
-            </xsl:for-each>
+                </xsl:for-each>
+            </xsl:element>
             <xsl:element name="Statystyki">
                 <xsl:apply-templates select="tablica_zadań/zadania"/>
                 <xsl:apply-templates select="tablica_zadań/użytkownicy"/>
