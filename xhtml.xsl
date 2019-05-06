@@ -21,7 +21,7 @@
                         <th>Nazwisko pracownika</th>
                         <th>Email pracownika</th>
                     </tr>
-                    <xsl:for-each select="Zadania/Zadanie">
+                    <xsl:for-each select="Raport/Zadania/Zadanie">
                         <tr>
                             <td><xsl:value-of select="ID"/></td>
                             <td><xsl:value-of select="Tytuł"/></td>
@@ -32,6 +32,56 @@
                             <td><xsl:value-of select="Email"/></td>
                         </tr>
                     </xsl:for-each>
+                </table>
+                <table border="4" align="center" style="text-align:center">
+                    <caption><b>Statystyki zadań</b></caption>
+                    <tr>
+                        <th>Łączna liczba zadań</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Łączna_liczba_zadań"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczba zadań otwartych</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_otwartych"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczba zadań realizowanych</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_realizowanych"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczba zadań zamkniętych</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_zamkniętych"/></td>
+                    </tr>
+                </table>
+                <table border="4" style="text-align:center" align="center">
+                    <caption><b>Statystyki zadań</b></caption>
+                    <tr>
+                        <th>Suma wynagrodzeń</th>
+                        <td><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Suma_wynagrodzeń, ' zł')"/></td>
+                    </tr>
+                    <tr>
+                        <th>Całkowity koszt wynagrodzeń</th>
+                        <td><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Całkowity_koszt_wynagrodzeń, ' zł')"/></td>
+                    </tr>
+                    <tr>
+                        <th>Łączna liczba pracowników</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczebność działu WWA01</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA01"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczebność działu WWA02</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA02"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczebność działu LDZ01</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_LDZ01"/></td>
+                    </tr>
+                    <tr>
+                        <th>Liczebność działu WDS01</th>
+                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WDS01"/></td>
+                    </tr>
                 </table>
             </body>
         </html>
