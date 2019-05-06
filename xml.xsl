@@ -16,8 +16,17 @@
                     </xsl:element>
                     <xsl:for-each select="../../../użytkownicy/użytkownik">
                         <xsl:if test="@id = $pracownik">
+                            <xsl:element name="Imię">
+                                <xsl:value-of select="imię"/>
+                            </xsl:element>
                             <xsl:element name="Nazwisko">
                                 <xsl:value-of select="nazwisko"/>
+                            </xsl:element>
+                            <xsl:element name="Dział">
+                                <xsl:value-of select="dział"/>
+                            </xsl:element>
+                            <xsl:element name="Email">
+                                <xsl:value-of select="email"/>
                             </xsl:element>
                         </xsl:if>
                     </xsl:for-each>
