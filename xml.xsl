@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml" version="2.0" encoding="UTF-8" indent="yes"/>
 
     <xsl:template match="/">
-        <xsl:apply-templates select="tablica_zadań/zadania"/>
-        <xsl:apply-templates select="tablica_zadań/użytkownicy"/>
-
-        <!--nie dziala w firefox-->
-        <!--<xsl:element name="Data_raportu">-->
-            <!--<xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />-->
-        <!--</xsl:element>-->
+        <xsl:element name="Raport">
+            <xsl:for-each select="tablica_zadań/zadania/tablica/zadanie">
+                <xsl:sort select="tytuł"/>
+                <xsl:element name="Zadanie">
+                    <xsl:variable name="pracownik" select="@wykonawca"/>
+                    <xsl:element name="ID">
+                        <xsl:value-of select="@id"/>
+                    </xsl:element>
+                    <xsl:element name="Tytuł">
+                        <xsl:value-of select="tytuł"/>
+                    </xsl:element>
+                    <xsl:for-each select="../../../użytkownicy/użytkownik">
+                        <xsl:if test="@id = $pracownik">
+                            <xsl:element name="Nazwisko">
+                                <xsl:value-of select="nazwisko"/>
+                            </xsl:element>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:for-each>
+            <xsl:element name="Statystyki">
+                <xsl:apply-templates select="tablica_zadań/zadania"/>
+                <xsl:apply-templates select="tablica_zadań/użytkownicy"/>
+            </xsl:element>
+        </xsl:element>
     </xsl:template>
 
     <xsl:template match="tablica_zadań/zadania">
@@ -30,19 +48,29 @@
     </xsl:template>
 
     <xsl:template match="tablica_zadań/użytkownicy">
-        <xsl:param name="maxPensja" select="max(użytkownik/pensja)"/>
-        <xsl:element name="Najwyższe_wynagrodzenie">
-            <!--<xsl:value-of select="$maxPensja"/>-->
-        </xsl:element>
-        <xsl:element name="Najwięcej_zarabiający_pracownik">
-            <xsl:for-each select="użytkownik">
-                <xsl:if test="pensja = $maxPensja">
-                    <xsl:value-of select="concat(imię, ' ', nazwisko)"/>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
-        <xsl:element name="Najliczniejszy_dział">
-
+        <xsl:param name="sumPensja" select="sum(użytkownik/pensja)"/>
+        <xsl:element name="Statystyki_pracowników">
+            <xsl:element name="Liczba_pracowników">
+                <xsl:value-of select="count(użytkownik)"/>
+            </xsl:element>
+            <xsl:element name="Suma_wynagrodzeń">
+                <xsl:value-of select="$sumPensja"/>
+            </xsl:element>
+            <xsl:element name="Całkowity_koszt_wynagrodzeń">
+                <xsl:value-of select="$sumPensja*1.2"/>
+            </xsl:element>
+            <xsl:element name="Liczba_pracowników_w_dziale_WWA01">
+                <xsl:value-of select="count(użytkownik[dział = 'WWA01'])"/>
+            </xsl:element>
+            <xsl:element name="Liczba_pracowników_w_dziale_WWA02">
+                <xsl:value-of select="count(użytkownik[dział = 'WWA02'])"/>
+            </xsl:element>
+            <xsl:element name="Liczba_pracowników_w_dziale_LDZ01">
+                <xsl:value-of select="count(użytkownik[dział = 'LDZ01'])"/>
+            </xsl:element>
+            <xsl:element name="Liczba_pracowników_w_dziale_WDS01">
+                <xsl:value-of select="count(użytkownik[dział = 'WDS01'])"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
