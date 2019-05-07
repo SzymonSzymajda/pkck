@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" encoding="utf-8" indent="yes"
-                doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
-                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
+                doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
 
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -10,7 +10,7 @@
                 <title>Raport aktualnych zadań</title>
             </head>
             <body style="background-color:#e5e5a2">
-                <table border="2" bgcolor="#ffffce" align="center" style="text-align:center" >
+                <table border="2" style="text-align:center" >
                     <caption><b>Tabela z aktualnymi zadaniami</b></caption>
                     <tr>
                         <th id="a1">ID</th>
@@ -33,7 +33,7 @@
                         </tr>
                     </xsl:for-each>
                 </table>
-                <table border="4" bgcolor="#ffffce" align="center" style="text-align:center">
+                <table border="4" style="text-align:center">
                     <caption><b>Statystyki zadań</b></caption>
                     <tr>
                         <th id="z1">Łączna liczba zadań</th>
@@ -52,7 +52,7 @@
                         <td headers="z4"><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_zamkniętych"/></td>
                     </tr>
                 </table>
-                <table border="4" style="text-align:center" align="center">
+                <table border="4" style="text-align:center">
                     <caption><b>Statystyki pracowników</b></caption>
                     <tr>
                         <th id="p1">Suma wynagrodzeń</th>
