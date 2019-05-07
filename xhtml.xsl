@@ -13,74 +13,74 @@
                 <table border="2" bgcolor="#6fa3f7" align="center" style="text-align:center" >
                     <caption><b>Tabela z aktualnymi zadaniami</b></caption>
                     <tr>
-                        <th>ID</th>
-                        <th>Tytuł</th>
-                        <th>Status</th>
-                        <th>Dział</th>
-                        <th>Imię pracownika</th>
-                        <th>Nazwisko pracownika</th>
-                        <th>Email pracownika</th>
+                        <th id="a1">ID</th>
+                        <th id="a2">Tytuł</th>
+                        <th id="a3">Status</th>
+                        <th id="a4">Dział</th>
+                        <th id="a5">Imię pracownika</th>
+                        <th id="a6">Nazwisko pracownika</th>
+                        <th id="a7">Email pracownika</th>
                     </tr>
                     <xsl:for-each select="Raport/Zadania/Zadanie">
                         <tr>
-                            <td><xsl:value-of select="ID"/></td>
-                            <td><xsl:value-of select="Tytuł"/></td>
-                            <td><xsl:value-of select="Status"/></td>
-                            <td><xsl:value-of select="Imię"/></td>
-                            <td><xsl:value-of select="Nazwisko"/></td>
-                            <td><xsl:value-of select="Dział"/></td>
-                            <td><xsl:value-of select="Email"/></td>
+                            <td headers="a1"><xsl:value-of select="ID"/></td>
+                            <td headers="a2"><xsl:value-of select="Tytuł"/></td>
+                            <td headers="a3"><xsl:value-of select="Status"/></td>
+                            <td headers="a4"><xsl:value-of select="Imię"/></td>
+                            <td headers="a5"><xsl:value-of select="Nazwisko"/></td>
+                            <td headers="a6"><xsl:value-of select="Dział"/></td>
+                            <td headers="a7"><xsl:value-of select="Email"/></td>
                         </tr>
                     </xsl:for-each>
                 </table>
                 <table border="4" align="center" style="text-align:center">
                     <caption><b>Statystyki zadań</b></caption>
                     <tr>
-                        <th>Łączna liczba zadań</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Łączna_liczba_zadań"/></td>
+                        <th id="z1">Łączna liczba zadań</th>
+                        <td headers="z1"><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Łączna_liczba_zadań"/></td>
                     </tr>
                     <tr>
-                        <th>Liczba zadań otwartych</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_otwartych"/></td>
+                        <th id="z2">Liczba zadań otwartych</th>
+                        <td headers="z2"><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_otwartych"/></td>
                     </tr>
                     <tr>
-                        <th>Liczba zadań realizowanych</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_realizowanych"/></td>
+                        <th id="z3">Liczba zadań realizowanych</th>
+                        <td headers="z3"><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_realizowanych"/></td>
                     </tr>
                     <tr>
-                        <th>Liczba zadań zamkniętych</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_zamkniętych"/></td>
+                        <th id="z4">Liczba zadań zamkniętych</th>
+                        <td headers="z4"><xsl:value-of select="Raport/Statystyki/Statystyki_zadań/Liczba_zadań_zamkniętych"/></td>
                     </tr>
                 </table>
                 <table border="4" style="text-align:center" align="center">
-                    <caption><b>Statystyki zadań</b></caption>
+                    <caption><b>Statystyki pracowników</b></caption>
                     <tr>
-                        <th>Suma wynagrodzeń</th>
-                        <td><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Suma_wynagrodzeń, ' zł')"/></td>
+                        <th id="p1">Suma wynagrodzeń</th>
+                        <td headers="p1"><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Suma_wynagrodzeń, ' zł')"/></td>
                     </tr>
                     <tr>
-                        <th>Całkowity koszt wynagrodzeń</th>
-                        <td><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Całkowity_koszt_wynagrodzeń, ' zł')"/></td>
+                        <th id="p2">Całkowity koszt wynagrodzeń</th>
+                        <td headers="p2"><xsl:value-of select="concat(Raport/Statystyki/Statystyki_pracowników/Całkowity_koszt_wynagrodzeń, ' zł')"/></td>
                     </tr>
                     <tr>
-                        <th>Łączna liczba pracowników</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników"/></td>
+                        <th id="p3">Łączna liczba pracowników</th>
+                        <td headers="p3"><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników"/></td>
                     </tr>
                     <tr>
-                        <th>Liczebność działu WWA01</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA01"/></td>
+                        <th id="p4">Liczebność działu WWA01</th>
+                        <td headers="p4"><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA01"/></td>
                     </tr>
                     <tr>
-                        <th>Liczebność działu WWA02</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA02"/></td>
+                        <th id="p5">Liczebność działu WWA02</th>
+                        <td headers="p5"><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WWA02"/></td>
                     </tr>
                     <tr>
-                        <th>Liczebność działu LDZ01</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_LDZ01"/></td>
+                        <th id="p6">Liczebność działu LDZ01</th>
+                        <td headers="p6"><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_LDZ01"/></td>
                     </tr>
                     <tr>
-                        <th>Liczebność działu WDS01</th>
-                        <td><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WDS01"/></td>
+                        <th id="p7">Liczebność działu WDS01</th>
+                        <td headers="p7"><xsl:value-of select="Raport/Statystyki/Statystyki_pracowników/Liczba_pracowników_w_dziale_WDS01"/></td>
                     </tr>
                 </table>
             </body>
