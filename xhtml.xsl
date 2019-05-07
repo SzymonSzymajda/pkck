@@ -9,8 +9,8 @@
             <head>
                 <title>Raport aktualnych zadań</title>
             </head>
-            <body style="background-color:#d1e2ff">
-                <table border="2" bgcolor="#6fa3f7" align="center" style="text-align:center" >
+            <body style="background-color:#e5e5a2">
+                <table border="2" bgcolor="#ffffce" align="center" style="text-align:center" >
                     <caption><b>Tabela z aktualnymi zadaniami</b></caption>
                     <tr>
                         <th id="a1">ID</th>
@@ -33,7 +33,7 @@
                         </tr>
                     </xsl:for-each>
                 </table>
-                <table border="4" align="center" style="text-align:center">
+                <table border="4" bgcolor="#ffffce" align="center" style="text-align:center">
                     <caption><b>Statystyki zadań</b></caption>
                     <tr>
                         <th id="z1">Łączna liczba zadań</th>
