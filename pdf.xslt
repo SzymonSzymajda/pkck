@@ -27,19 +27,19 @@
 									<fo:block font-weight="bold">ID</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
-									<fo:block font-weight="bold">Tytu³</fo:block>
+									<fo:block font-weight="bold">Tytul</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
 									<fo:block font-weight="bold">Status</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
-									<fo:block font-weight="bold">Imiê</fo:block>
+									<fo:block font-weight="bold">Imie</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
 									<fo:block font-weight="bold">Nazwisko</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
-									<fo:block font-weight="bold">Dzia³</fo:block>
+									<fo:block font-weight="bold">Dzial</fo:block>
 								</fo:table-cell>
 								<fo:table-cell>
 									<fo:block font-weight="bold">Email</fo:block>
@@ -96,7 +96,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>£±czna liczba zadañ: </fo:block>
+								<fo:block>Laczna liczba zadan: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -108,7 +108,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba zadañ otwartych: </fo:block>
+								<fo:block>Liczba zadan otwartych: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -118,7 +118,7 @@
 						</fo:list-item>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba zadañ realizowanych: </fo:block>
+								<fo:block>Liczba zadan realizowanych: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -130,7 +130,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba zadañ zamkniêtych: </fo:block>
+								<fo:block>Liczba zadan zamknietych: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -143,7 +143,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba pracowników: </fo:block>
+								<fo:block>Liczba pracownikow: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -155,7 +155,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Suma wynagrodzeñ: </fo:block>
+								<fo:block>Suma wynagrodzen: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -165,7 +165,7 @@
 						</fo:list-item>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Ca³kowity koszt wynagrodzeñ: </fo:block>
+								<fo:block>Calkowity koszt wynagrodzen: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -177,7 +177,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba pracowników w dziale WWA01: </fo:block>
+								<fo:block>Liczba pracownikow w dziale WWA01: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -189,7 +189,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba pracowników w dziale WWA02: </fo:block>
+								<fo:block>Liczba pracownikow w dziale WWA02: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -201,7 +201,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba pracowników w dziale LDZ01: </fo:block>
+								<fo:block>Liczba pracownikow w dziale LDZ01: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">
@@ -213,7 +213,7 @@
 					<fo:list-block>
 						<fo:list-item>
 							<fo:list-item-label>
-								<fo:block>Liczba pracowników w dziale WSD01: </fo:block>
+								<fo:block>Liczba pracownikow w dziale WSD01: </fo:block>
 							</fo:list-item-label>
 							<fo:list-item-body>
 								<fo:block margin-left="20em">

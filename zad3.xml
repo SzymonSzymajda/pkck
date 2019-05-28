@@ -4,17 +4,17 @@
         <Zadanie>
             <ID>zad9</ID>
             <Tytuł>LDZ01-1: Repozytorium</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowak</Nazwisko>
             <Dział>WWA01</Dział>
             <Email/>
         </Zadanie>
         <Zadanie>
             <ID>zad7</ID>
-            <Tytuł>LDZ01-2: Dostęp</Tytuł>
+            <Tytuł>LDZ01-2: Dostep</Tytuł>
             <Status>realizowane</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Nowak</Nazwisko>
             <Dział>WWA01</Dział>
             <Email/>
@@ -23,16 +23,16 @@
             <ID>zad8</ID>
             <Tytuł>LDZ01-3: Restart servera</Tytuł>
             <Status>realizowane</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Kowalski</Nazwisko>
             <Dział>LDZ01</Dział>
             <Email>jan.kowalski@kompro.tzvl</Email>
         </Zadanie>
         <Zadanie>
             <ID>zad1</ID>
-            <Tytuł>LDZ01-4: Błąd uruchomienia</Tytuł>
+            <Tytuł>LDZ01-4: Blad uruchomienia</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -41,7 +41,7 @@
             <ID>zad2</ID>
             <Tytuł>LDZ01-7: Kolor menu</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Nowak</Nazwisko>
             <Dział>WWA01</Dział>
             <Email/>
@@ -50,16 +50,16 @@
             <ID>zad5</ID>
             <Tytuł>LDZ02-1: Nowa tabela w bazie</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Nowak</Nazwisko>
             <Dział>WWA01</Dział>
             <Email/>
         </Zadanie>
         <Zadanie>
             <ID>zad4</ID>
-            <Tytuł>LDZ02-1: Wyczyścić bazę</Tytuł>
+            <Tytuł>LDZ02-1: Wyczyscic baze</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Kowal</Nazwisko>
             <Dział>LDZ01</Dział>
             <Email>jan.kowal@kompro.tzvl</Email>
@@ -68,7 +68,7 @@
             <ID>zad3</ID>
             <Tytuł>WDS01-1: Kawa</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Tomasz</Imię>
+            <imię>Tomasz</imię>
             <Nazwisko>Terka</Nazwisko>
             <Dział>WDS01</Dział>
             <Email>tomasz.terka@mcdonalds.com</Email>
@@ -76,17 +76,17 @@
         <Zadanie>
             <ID>zad12</ID>
             <Tytuł>WDS01-2: Otwarcie</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
         </Zadanie>
         <Zadanie>
             <ID>zad13</ID>
-            <Tytuł>WDS01-3: Zamknięcie</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Tytuł>WDS01-3: Zamkniecie</Tytuł>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -95,16 +95,16 @@
             <ID>zad6</ID>
             <Tytuł>WWA01-15: Rewolta</Tytuł>
             <Status>otwarte</Status>
-            <Imię>Jan</Imię>
+            <imię>Jan</imię>
             <Nazwisko>Kowalski</Nazwisko>
             <Dział>LDZ01</Dział>
             <Email>jan.kowalski@kompro.tzvl</Email>
         </Zadanie>
         <Zadanie>
             <ID>zad10</ID>
-            <Tytuł>WWA02-1: Podatność na XSS</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Tytuł>WWA02-1: Podatnosc na XSS</Tytuł>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -112,17 +112,17 @@
         <Zadanie>
             <ID>zad11</ID>
             <Tytuł>WWA02-2: Audyt</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
         </Zadanie>
         <Zadanie>
             <ID>zad14</ID>
-            <Tytuł>WWA02-3: Zatrudnić nową sprzątaczkę</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Tytuł>WWA02-3: Zatrudnic nowa sprzataczke</Tytuł>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -130,17 +130,17 @@
         <Zadanie>
             <ID>zad15</ID>
             <Tytuł>WWA02-4: Stare repozytorium</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
         </Zadanie>
         <Zadanie>
             <ID>zad16</ID>
-            <Tytuł>WWA02-5: Iść na obiad</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Tytuł>WWA02-5: Isc na obiad</Tytuł>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -148,8 +148,8 @@
         <Zadanie>
             <ID>zad17</ID>
             <Tytuł>WWA02-6: Konferencja</Tytuł>
-            <Status>zamknięte</Status>
-            <Imię>Jan</Imię>
+            <Status>zamkniete</Status>
+            <imię>Jan</imię>
             <Nazwisko>Nowacki</Nazwisko>
             <Dział>WWA02</Dział>
             <Email>jan.nowacki@kompro.tzvl</Email>
@@ -157,10 +157,10 @@
     </Zadania>
     <Statystyki>
         <Statystyki_zadań>
-            <Łączna_liczba_zadań>17</Łączna_liczba_zadań>
+            <Łaczna_liczba_zadań>17</Łaczna_liczba_zadań>
             <Liczba_zadań_otwartych>6</Liczba_zadań_otwartych>
             <Liczba_zadań_realizowanych>2</Liczba_zadań_realizowanych>
-            <Liczba_zadań_zamkniętych>9</Liczba_zadań_zamkniętych>
+            <Liczba_zadań_zamknietych>9</Liczba_zadań_zamknietych>
         </Statystyki_zadań>
         <Statystyki_pracowników>
             <Liczba_pracowników>5</Liczba_pracowników>
