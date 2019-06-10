@@ -41,7 +41,27 @@ namespace Zad5
 
         public static void AddNewEmployee(Tablica_zadań root)
         {
-
+            Console.WriteLine("Dodawanie pracownika\nPodaj imię, nazwisko, dział, nr tel, email, pensje");
+            int maxid = 0;
+            foreach(var u in root.Użytkownicy.Użytkownik)
+            {
+                if(maxid < int.Parse(u.Id.Substring(1)))
+                {
+                    maxid = int.Parse(u.Id.Substring(1));
+                }
+            }
+            ++maxid;
+            Użytkownik nowy = new Użytkownik
+            {
+                Id = "U00" + maxid,
+                Imię = Console.ReadLine(),
+                Nazwisko = Console.ReadLine(),
+                Dział = Console.ReadLine(),
+                Nr_tel = Console.ReadLine(),
+                Email = Console.ReadLine(),
+                Pensja = Console.ReadLine()
+            };
+            root.Użytkownicy.Użytkownik.Add(nowy);
         }
     }
 }
