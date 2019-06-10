@@ -24,6 +24,19 @@ namespace Zad5
                 ++maxid;
                 id = "zad" + maxid;
             }
+            else
+            {
+                foreach (var t in root.Zadania.Tablica)
+                {
+                    foreach (var z in t.Zadanie)
+                    {
+                        if (z.Id.Equals(id))
+                        {
+                            return;
+                        }
+                    }
+                }
+            }
             
             Zadanie nowe = new Zadanie
             {
@@ -56,6 +69,16 @@ namespace Zad5
                 }
                 ++maxid;
                 id = "U00" + maxid;
+            }
+            else
+            {
+                foreach (var u in root.Użytkownicy.Użytkownik)
+                {
+                    if (u.Id.Equals(id))
+                    {
+                        return;
+                    }
+                }
             }
             
             Użytkownik nowy = new Użytkownik
