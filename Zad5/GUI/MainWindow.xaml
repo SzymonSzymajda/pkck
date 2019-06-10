@@ -10,8 +10,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TreeView Name="TreeView" Margin="10,44,10,10" RenderTransformOrigin="0.5,0.5" ItemsSource="{Binding  Tree}" Grid.ColumnSpan="3">
+        <TreeView Name="TreeView" Margin="10,44,10,10" RenderTransformOrigin="0.5,0.5" ItemsSource="{Binding  Tree}" Grid.ColumnSpan="4">
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
                     <TextBlock Text="{Binding Path=Label}" Margin="0,0,4,0" />
@@ -23,8 +24,9 @@
                 </Style>
             </TreeView.ItemContainerStyle>
         </TreeView>
-        <Button x:Name="Add" Content="Add Element" Command="{Binding AddElementCommand}" Margin="10,10,10,0" VerticalAlignment="Top" Height="19"/>
-        <Button x:Name="Save" Content="Save" Command="{Binding SaveCommand}" VerticalAlignment="Top" Margin="10,10,10,0" RenderTransformOrigin="0.787,0.406" Height="19" Grid.Column="2"/>
-        <Button x:Name="Load" Content="Load" Command="{Binding LoadCommand}" Margin="10,10,10,0" Height="19" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="AddT" Content="Add Task" Command="{Binding AddTaskCommand}" Margin="10,10,10,0" VerticalAlignment="Top" Height="19" Grid.Column="0"/>
+        <Button x:Name="AddU" Content="Add User" Command="{Binding AddUserCommand}" Margin="10,10,10,0" VerticalAlignment="Top" Height="19" Grid.Column="1"/>
+        <Button x:Name="Save" Content="Save" Command="{Binding SaveCommand}" VerticalAlignment="Top" Margin="10,10,10,0" RenderTransformOrigin="0.787,0.406" Height="19" Grid.Column="3"/>
+        <Button x:Name="Load" Content="Load" Command="{Binding LoadCommand}" Margin="10,10,10,0" Height="19" VerticalAlignment="Top" Grid.Column="2"/>
     </Grid>
 </Window>

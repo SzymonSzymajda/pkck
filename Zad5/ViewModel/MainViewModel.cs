@@ -15,7 +15,9 @@ namespace ViewModel
 
         DialogFileSupplier fileSupplier;
 
-        public ICommand AddElementCommand { get; }
+        public ICommand AddTaskCommand { get; }
+        public ICommand AddUserCommand { get; }
+
         public ICommand LoadCommand { get; }
         public ICommand SaveCommand { get; }
         public ObservableCollection<BaseElementVM> Tree { get; set; }
@@ -25,10 +27,16 @@ namespace ViewModel
             Tree = new ObservableCollection<BaseElementVM>();
             TablicaVM = new TablicaZadanVM();
             fileSupplier = new DialogFileSupplier();
-            AddElementCommand = new RelayCommand(AddElement);
+            AddTaskCommand = new RelayCommand(AddTask);
+            AddUserCommand = new RelayCommand(AddUser);
             LoadCommand = new RelayCommand(Load);
             SaveCommand = new RelayCommand(Save);
             TreeViewLoaded();
+        }
+
+        private void AddUser()
+        {
+            throw new NotImplementedException();
         }
 
         private void Save()
@@ -45,7 +53,7 @@ namespace ViewModel
             TreeViewLoaded();
         }
 
-        private void AddElement()
+        private void AddTask()
         {
             throw new NotImplementedException();
         }
