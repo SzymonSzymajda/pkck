@@ -8,10 +8,10 @@ namespace Zad5
 {
     public class Tools
     {
-        public static void AddNewTask(Tablica_zadań root, string wyk, string tyt, string opis, string prior, string id = "-1")
+        public static void AddNewTask(Tablica_zadań root, string wyk, string tyt, string opis, string prior, string id = "auto")
         {
             int maxid = 0;
-            if(id.Equals("-1"))
+            if(id.Equals("auto"))
             {
                 foreach (var t in root.Zadania.Tablica)
                 {
@@ -55,10 +55,10 @@ namespace Zad5
             }
         }
 
-        public static void AddNewEmployee(Tablica_zadań root, string imie, string nazwisko, string dzial, string nrtel, string email, string pensja, string id = "-1")
+        public static void AddNewEmployee(Tablica_zadań root, string imie, string nazwisko, string dzial, string nrtel, string email, string pensja, string id = "auto")
         {
             int maxid = 0;
-            if(id.Equals("-1"))
+            if(id.Equals("auto"))
             {
                 foreach (var u in root.Użytkownicy.Użytkownik)
                 {

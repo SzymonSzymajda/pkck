@@ -47,6 +47,7 @@
     <Compile Include="BaseElementView.cs" />
     <Compile Include="BaseViewModel.cs" />
     <Compile Include="DialogFileSupplier.cs" />
+    <Compile Include="DialogViewModel.cs" />
     <Compile Include="IExpandable.cs" />
     <Compile Include="MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

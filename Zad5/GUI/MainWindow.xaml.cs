@@ -9,7 +9,11 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            var viewModel = new MainViewModel();
+            viewModel.AddTaskViewShowed += (s, e) => new AddTaskDialog(new DialogViewModel(viewModel.TablicaVM)).Show();
+            viewModel.AddEmpViewShowed += (s, e) => new AddEmployeeDialog(new DialogViewModel(viewModel.TablicaVM)).Show();
+            DataContext = viewModel;
+
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
-        TablicaZadanVM TablicaVM { get; set; }
+        public TablicaZadanVM TablicaVM { get; set; }
 
         DialogFileSupplier fileSupplier;
 
@@ -21,6 +21,9 @@ namespace ViewModel
         public ICommand LoadCommand { get; }
         public ICommand SaveCommand { get; }
         public ObservableCollection<BaseElementVM> Tree { get; set; }
+
+        public event EventHandler AddTaskViewShowed;
+        public event EventHandler AddEmpViewShowed;
 
         public MainViewModel()
         {
@@ -36,7 +39,7 @@ namespace ViewModel
 
         private void AddUser()
         {
-            throw new NotImplementedException();
+            AddEmpViewShowed?.Invoke(this, EventArgs.Empty);
         }
 
         private void Save()
@@ -55,7 +58,7 @@ namespace ViewModel
 
         private void AddTask()
         {
-            throw new NotImplementedException();
+            AddTaskViewShowed?.Invoke(this, EventArgs.Empty);
         }
 
         private void TreeViewLoaded()
