@@ -11,8 +11,6 @@ namespace Zad5
         static void Main(string[] args)
         {
             Tablica_zadań root = Serialization.DeserializeFile("zad1.xml");
-            Tools.AddNewTask(root);
-            Tools.AddNewEmployee(root);
             Serialization.SerializeToFile("test.xml", root);
         }
     }

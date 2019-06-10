@@ -8,29 +8,10 @@ namespace Zad5
 {
     class Tools
     {
-        public static void AddNewTask(Tablica_zadań root)
+        public static void AddNewTask(Tablica_zadań root, string wyk, string tyt, string opis, string prior, string id = "-1")
         {
-            Console.WriteLine("Dodawanie zadania\nPodaj ID wykonawcy, tytuł, opis, priorytet");
-            Console.WriteLine("Czy chcesz podać własne ID? Y/N");
-            string podaj = Console.ReadLine();
-            string id = "";
             int maxid = 0;
-            if (podaj.Equals("Y") || podaj.Equals("y"))
-            {
-                id = Console.ReadLine();
-                foreach (var t in root.Zadania.Tablica)
-                {
-                    foreach (var z in t.Zadanie)
-                    {
-                        if (z.Id.Equals(id))
-                        {
-                            Console.WriteLine("Nie ma takiego numeru");
-                            return;
-                        }                            
-                    }
-                }
-            }
-            else if(podaj.Equals("N") || podaj.Equals("n"))
+            if(id.Equals("-1"))
             {
                 foreach (var t in root.Zadania.Tablica)
                 {
@@ -43,19 +24,14 @@ namespace Zad5
                 ++maxid;
                 id = "zad" + maxid;
             }
-            else
-            {
-                Console.WriteLine("Nie ma takiego numeru");
-                return;
-            }
             
             Zadanie nowe = new Zadanie
             {
                 Id = id,
-                Wykonawca = Console.ReadLine(),
-                Tytuł = Console.ReadLine(),
-                Opis = Console.ReadLine(),
-                Priorytet = Console.ReadLine()
+                Wykonawca = wyk,
+                Tytuł = tyt,
+                Opis = opis,
+                Priorytet = prior
             };
             foreach(var u in root.Użytkownicy.Użytkownik)
             {
@@ -64,29 +40,12 @@ namespace Zad5
                     root.Zadania.Tablica.Where(x => x.Status.Equals("otwarte")).First().Zadanie.Add(nowe); 
                 }
             }
-            Console.WriteLine("Nie ma takiego numeru");
         }
 
-        public static void AddNewEmployee(Tablica_zadań root)
+        public static void AddNewEmployee(Tablica_zadań root, string imie, string nazwisko, string dzial, string nrtel, string email, string pensja, string id = "-1")
         {
-            Console.WriteLine("Dodawanie pracownika\nPodaj imię, nazwisko, dział, nr tel, email, pensje");
-            Console.WriteLine("Czy chcesz podać własne ID? Y/N");
-            string podaj = Console.ReadLine();
-            string id = "";
             int maxid = 0;
-            if (podaj.Equals("Y") || podaj.Equals("y"))
-            {
-                id = Console.ReadLine();
-                foreach (var u in root.Użytkownicy.Użytkownik)
-                {
-                    if (u.Id.Equals(id))
-                    {
-                        Console.WriteLine("Nie ma takiego numeru");
-                        return;
-                    }
-                }
-            }
-            else if(podaj.Equals("N") || podaj.Equals("n"))
+            if(id.Equals("-1"))
             {
                 foreach (var u in root.Użytkownicy.Użytkownik)
                 {
@@ -97,11 +56,6 @@ namespace Zad5
                 }
                 ++maxid;
                 id = "U00" + maxid;
-            }
-            else
-            {
-                Console.WriteLine("Nie ma takiego numeru");
-                return;
             }
             
             Użytkownik nowy = new Użytkownik
