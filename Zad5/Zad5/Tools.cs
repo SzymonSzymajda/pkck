@@ -10,7 +10,33 @@ namespace Zad5
     {
         public static void AddNewTask(Tablica_zadań root)
         {
-
+            Console.WriteLine("Dodawanie zadania\nPodaj ID wykonawcy, tytuł, opis, priorytet");
+            int maxid = 0;
+            foreach(var t in root.Zadania.Tablica)
+            {
+                foreach(var z in t.Zadanie)
+                {
+                    if (maxid < int.Parse(z.Id.Substring(3)))
+                             maxid = int.Parse(z.Id.Substring(3));
+                }
+            }
+            ++maxid;
+            Zadanie nowe = new Zadanie
+            {
+                Id = "zad" + maxid,
+                Wykonawca = Console.ReadLine(),
+                Tytuł = Console.ReadLine(),
+                Opis = Console.ReadLine(),
+                Priorytet = Console.ReadLine()
+            };
+            foreach(var u in root.Użytkownicy.Użytkownik)
+            {
+                if (u.Id.Equals(nowe.Wykonawca))
+                {
+                    root.Zadania.Tablica.Where(x => x.Status.Equals("otwarte")).First().Zadanie.Add(nowe); 
+                }
+            }
+            Console.WriteLine("Nie ma takiego numeru");
         }
 
         public static void AddNewEmployee(Tablica_zadań root)
