@@ -84,12 +84,12 @@ namespace Zad5
             Użytkownik nowy = new Użytkownik
             {
                 Id = id,
-                Imię = Console.ReadLine(),
-                Nazwisko = Console.ReadLine(),
-                Dział = Console.ReadLine(),
-                Nr_tel = Console.ReadLine(),
-                Email = Console.ReadLine(),
-                Pensja = Console.ReadLine()
+                Imię = imie,
+                Nazwisko = nazwisko,
+                Dział = dzial,
+                Nr_tel = nrtel,
+                Email = email,
+                Pensja = pensja
             };
             root.Użytkownicy.Użytkownik.Add(nowy);
         }
