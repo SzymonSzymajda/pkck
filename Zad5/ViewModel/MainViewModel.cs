@@ -44,13 +44,13 @@ namespace ViewModel
 
         private void Save()
         {
-            var path = fileSupplier.GetFilePathToLoad();
+            var path = fileSupplier.GetFilePathToSave("XML file(.xml) | *.xml");
             Serialization.SerializeToFile(path, TablicaVM.TablicaZadan);
         }
 
         private void Load()
         {
-            var path = fileSupplier.GetFilePathToLoad();
+            var path = fileSupplier.GetFilePathToLoad("XML file(.xml) | *.xml");
             var xml = Serialization.DeserializeFile(path);
             TablicaVM = new TablicaZadanVM(xml);
             TreeViewLoaded();
