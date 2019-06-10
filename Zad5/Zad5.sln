@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad5", "Zad5\Zad5.csproj", "{FDA4393F-BC2D-423E-B245-76D960C097BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{8846F98E-445A-4DD1-AF56-7041E3E2E755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{CC98A381-B7CF-4587-BA32-C49ED28E6C9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FDA4393F-BC2D-423E-B245-76D960C097BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA4393F-BC2D-423E-B245-76D960C097BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA4393F-BC2D-423E-B245-76D960C097BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8846F98E-445A-4DD1-AF56-7041E3E2E755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8846F98E-445A-4DD1-AF56-7041E3E2E755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8846F98E-445A-4DD1-AF56-7041E3E2E755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8846F98E-445A-4DD1-AF56-7041E3E2E755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC98A381-B7CF-4587-BA32-C49ED28E6C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC98A381-B7CF-4587-BA32-C49ED28E6C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC98A381-B7CF-4587-BA32-C49ED28E6C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC98A381-B7CF-4587-BA32-C49ED28E6C9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

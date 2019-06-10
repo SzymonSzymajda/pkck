@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zad5
 {
-    class Tools
+    public class Tools
     {
         public static void AddNewTask(Tablica_zadań root, string wyk, string tyt, string opis, string prior, string id = "-1")
         {
