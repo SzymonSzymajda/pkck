@@ -10,12 +10,47 @@ namespace ViewModel
     public class ZadanieVM : BaseElementVM
     {
         public Zadanie Zadanie { get; set; }
-        public override void Expand(){}
+        public override void Expand()
+        {
+            Children.Add(new ElementVM("ID", Zadanie.Id));
+            Children.Add(new ElementVM("Opis", Zadanie.Opis));
+            Children.Add(new ElementVM("Priorytet", Zadanie.Priorytet));
+            Children.Add(new ElementVM("ID wykonawcy", Zadanie.Wykonawca));
+            Children.Add(new ElementVM("Opis", Zadanie.Opis));
+            if (Zadanie.Data_rozpoczęcia != null)
+            {
+                Children.Add(new ElementVM("Data rozpoczęcia", Zadanie.Data_rozpoczęcia.Data));
+            }
+            if (Zadanie.Data_ukończenia != null)
+            {
+                Children.Add(new ElementVM("Data ukończenia", Zadanie.Data_ukończenia.Data));
+            }
+        }
 
         public ZadanieVM(Zadanie zadanie)
         {
             Zadanie = zadanie;
             Name = zadanie.Tytuł;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+    }
+
+    public class ElementVM : BaseElementVM
+    {
+
+        public override void Expand()
+        {
+        }
+
+        public ElementVM(string name, string value)
+        {
+            IsExpanded = true;
+            RaisePropertyChanged(nameof(IsExpanded));
+            Name = name + ": " + value;
         }
 
         public override string ToString()
@@ -130,6 +165,19 @@ namespace ViewModel
 
         public override void Expand()
         {
+            Children.Add(new ElementVM("Dział", Uzytkownik.Dział));
+            if (Uzytkownik.Email != null)
+            {
+                Children.Add(new ElementVM("Email", Uzytkownik.Email));
+            }
+            if (Uzytkownik.Nr_tel != null)
+            {
+                Children.Add(new ElementVM("Nr tel", Uzytkownik.Nr_tel));
+            }
+            if (Uzytkownik.Pensja != null)
+            {
+                Children.Add(new ElementVM("Pensja", Uzytkownik.Pensja));
+            }
         }
 
         public override string ToString()

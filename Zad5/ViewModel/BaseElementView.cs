@@ -8,6 +8,8 @@ namespace ViewModel
     {
         public string Name { get; set; }
 
+        public bool Expandable { get; set; } = true;
+
         public string Label
         {
             get
@@ -25,7 +27,10 @@ namespace ViewModel
 
         public BaseElementVM()
         {
-            Children = new ObservableCollection<BaseElementVM>() { null };
+            if (Expandable)
+            {
+                Children = new ObservableCollection<BaseElementVM>() { null };
+            }
             this.m_WasBuilt = false;
         }
 
