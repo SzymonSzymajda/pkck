@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="AddTaskDialog" Height="221.4" Width="263.2">
+        Title="AddTaskDialog" Height="267" Width="263.2">
     <Grid>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="105,23,0,0" TextWrapping="Wrap" Text="{Binding Path=TaskEmployee}" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="105,51,0,0" TextWrapping="Wrap" Text="{Binding Path=TaskName}" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.623,3.035"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="105,79,0,0" TextWrapping="Wrap" Text="{Binding Path=TaskDesc}" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="105,107,0,0" TextWrapping="Wrap" Text="{Binding Path=TaskPriority}" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="105,135,0,0" TextWrapping="Wrap" Text="{Binding Path=TaskId}" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="83,163,0,0" VerticalAlignment="Top" Width="75" Command="{Binding AddTaskCommand}"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="87,198,0,0" VerticalAlignment="Top" Width="75" Command="{Binding AddTaskCommand}"/>
         <Label Content="Employee Id" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top"/>
         <Label Content="Task Id" HorizontalAlignment="Left" Margin="25,135,0,0" VerticalAlignment="Top"/>
         <Label Content="Priority" HorizontalAlignment="Left" Margin="25,104,0,0" VerticalAlignment="Top"/>
         <Label Content="Description" HorizontalAlignment="Left" Margin="25,76,0,0" VerticalAlignment="Top"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="25,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.471,2.023"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,166,0,0" TextWrapping="Wrap" FontWeight="Bold" VerticalAlignment="Top" Width="200" TextAlignment="Center" Text="{Binding Path=Message}"/>
     </Grid>
 </Window>

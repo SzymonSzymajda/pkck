@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="AddEmployeeDialog" Height="371.4" Width="343.2">
+        Title="AddEmployeeDialog" Height="391.4" Width="343.2">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="155*"/>
+        </Grid.ColumnDefinitions>
         <Label Content="Name" HorizontalAlignment="Left" Margin="55,69,0,0" VerticalAlignment="Top"/>
         <Label Content="Surname" HorizontalAlignment="Left" Margin="55,100,0,0" VerticalAlignment="Top"/>
         <Label Content="Department" HorizontalAlignment="Left" Margin="55,131,0,0" VerticalAlignment="Top"/>
@@ -14,14 +18,15 @@
         <Label Content="Email" HorizontalAlignment="Left" Margin="55,192,0,0" VerticalAlignment="Top"/>
         <Label Content="Salary" HorizontalAlignment="Left" Margin="55,223,0,0" VerticalAlignment="Top"/>
         <Label Content="Id" HorizontalAlignment="Left" Margin="55,254,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,73,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpName}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,104,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpSurname}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,135,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpDepartment}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,166,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpPhone}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,196,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpEmail}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,227,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpSalary}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,258,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpId}" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="115,300,0,0" VerticalAlignment="Top" Width="75" Command="{Binding AddEmployeeCommand}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,73,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpName}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,104,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpSurname}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,135,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpDepartment}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,166,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpPhone}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,196,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpEmail}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,227,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpSalary}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,258,0,0" TextWrapping="Wrap" Text="{Binding Path=EmpId}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="131,332,0,0" VerticalAlignment="Top" Width="75" Command="{Binding AddEmployeeCommand}" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,301,0,0" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"  Text="{Binding Path=Message}" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="227"/>
 
     </Grid>
 </Window>
