@@ -165,6 +165,7 @@ namespace ViewModel
 
         public override void Expand()
         {
+            Children.Add(new ElementVM("ID", Uzytkownik.Id));
             Children.Add(new ElementVM("Dział", Uzytkownik.Dział));
             if (Uzytkownik.Email != null)
             {
