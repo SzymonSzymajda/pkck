@@ -46,12 +46,19 @@ namespace Zad5
                 Opis = opis,
                 Priorytet = prior
             };
-            foreach(var u in root.Użytkownicy.Użytkownik)
+            bool found = false;
+            foreach (var u in root.Użytkownicy.Użytkownik)
             {
                 if (u.Id.Equals(nowe.Wykonawca))
                 {
-                    root.Zadania.Tablica.Where(x => x.Status.Equals("otwarte")).First().Zadanie.Add(nowe); 
+                    found = true;
+                    root.Zadania.Tablica.Where(x => x.Status.Equals("otwarte")).First().Zadanie.Add(nowe);
+                    break;
                 }
+            }
+            if(!found)
+            {
+                throw new IdNotFoundException("User with given id (" + nowe.Wykonawca + ") doesn't exit!");
             }
         }
 
