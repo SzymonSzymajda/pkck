@@ -16,7 +16,6 @@ namespace ViewModel
             Children.Add(new ElementVM("Opis", Zadanie.Opis));
             Children.Add(new ElementVM("Priorytet", Zadanie.Priorytet));
             Children.Add(new ElementVM("ID wykonawcy", Zadanie.Wykonawca));
-            Children.Add(new ElementVM("Opis", Zadanie.Opis));
             if (Zadanie.Data_rozpoczęcia != null)
             {
                 Children.Add(new ElementVM("Data rozpoczęcia", Zadanie.Data_rozpoczęcia.Data));
