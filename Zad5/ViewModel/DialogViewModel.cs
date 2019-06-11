@@ -28,16 +28,18 @@ namespace ViewModel
         public string EmpSalary { get; set; }
         public string EmpId { get; set; }
         public ICommand AddEmployeeCommand { get; }
+        public ICommand UpdateTreeCommand { get; set; }
 
         public string Message { get; set; }
 
-        public DialogViewModel(TablicaZadanVM rootModel)
+        public DialogViewModel(TablicaZadanVM rootModel, ICommand updateTree)
         {
             root = rootModel.TablicaZadan;
             TaskId = "auto";
             EmpId = "auto";
             AddTaskCommand = new RelayCommand(AddTask);
             AddEmployeeCommand = new RelayCommand(AddEmployee);
+            UpdateTreeCommand = updateTree;
         }
 
         public void AddTask()
@@ -46,6 +48,7 @@ namespace ViewModel
             {
                 Tools.AddNewTask(root, TaskEmployee, TaskName, TaskDesc, TaskPriority, TaskId);
                 Message = "Task added";
+                UpdateTreeCommand.Execute(null);
             }
             catch(IdNotFoundException e)
             {
@@ -59,6 +62,7 @@ namespace ViewModel
             Tools.AddNewEmployee(root, EmpName, EmpSurname, EmpDepartment, EmpPhone, EmpEmail, EmpSalary, EmpId);
             Message = "User added";
             RaisePropertyChanged(nameof(Message));
+            UpdateTreeCommand.Execute(null);
         }
     }
 }

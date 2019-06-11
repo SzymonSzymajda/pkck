@@ -131,6 +131,13 @@ namespace ViewModel
         {
             return Name;
         }
+
+        internal void Rebuild()
+        {
+            Children.Clear();
+            Expand();
+            IsExpanded = true;
+        }
     }
 
     public class UzytkownicyVM : BaseElementVM

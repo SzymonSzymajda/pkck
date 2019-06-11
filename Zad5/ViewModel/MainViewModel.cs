@@ -20,6 +20,7 @@ namespace ViewModel
 
         public ICommand LoadCommand { get; }
         public ICommand SaveCommand { get; }
+        public ICommand UpdateTreeCommand { get; }
         public ObservableCollection<BaseElementVM> Tree { get; set; }
 
         public event EventHandler AddTaskViewShowed;
@@ -34,7 +35,13 @@ namespace ViewModel
             AddUserCommand = new RelayCommand(AddUser);
             LoadCommand = new RelayCommand(Load);
             SaveCommand = new RelayCommand(Save);
+            UpdateTreeCommand = new RelayCommand(UpdateTree);
             TreeViewLoaded();
+        }
+
+        private void UpdateTree()
+        {
+            TablicaVM.Rebuild();
         }
 
         private void AddUser()
