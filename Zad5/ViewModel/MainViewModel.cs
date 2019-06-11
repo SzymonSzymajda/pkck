@@ -29,7 +29,6 @@ namespace ViewModel
         public MainViewModel()
         {
             Tree = new ObservableCollection<BaseElementVM>();
-            TablicaVM = new TablicaZadanVM();
             fileSupplier = new DialogFileSupplier();
             AddTaskCommand = new RelayCommand(AddTask);
             AddUserCommand = new RelayCommand(AddUser);
